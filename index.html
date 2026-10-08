@@ -9,22 +9,154 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%A7%AA</text></svg>">
   <link rel="stylesheet" href="web/vendor/darklight.css" title="docsify-darklight-theme">
   <style>
-    /* 阅读体验微调（配合 darklight 主题变量，明暗两套自动生效） */
-    .markdown-section { max-width: 860px; }
-    .markdown-section table { display: table; width: auto; max-width: 100%; }
-    .markdown-section th, .markdown-section td {
-      border: 1px solid var(--borderColor);
-      padding: 6px 14px;
-      line-height: 1.6;
+    /* ===== 基础 ===== */
+    ::selection { background: color-mix(in srgb, var(--accent) 25%, transparent); }
+    ::-webkit-scrollbar { width: 9px; height: 9px; }
+    ::-webkit-scrollbar-thumb {
+      background: color-mix(in srgb, var(--textColor) 28%, transparent);
+      border-radius: 99px; border: 2px solid transparent; background-clip: content-box;
     }
-    .markdown-section thead tr { background: var(--codeBackgroundColor); }
-    .markdown-section tbody tr:nth-child(2n) { background: var(--codeBackgroundColor); }
-    .markdown-section th { white-space: nowrap; }
-    .markdown-section h1, .markdown-section h2, .markdown-section h3 { border-bottom: 1px solid var(--borderColor); padding-bottom: .3em; }
-    .markdown-section blockquote { border-left: 4px solid var(--accent); }
-    /* 侧边栏顶部站名 */
-    .sidebar > h1 { font-size: 20px; }
-    .sidebar > h1 a { color: var(--accent); text-decoration: none; }
+    ::-webkit-scrollbar-track { background: transparent; }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    .markdown-section, .cover-main { animation: fadeUp .45s ease both; }
+
+    /* ===== 封面页 ===== */
+    .cover.show { color: #fff; }
+    .cover.show::before {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        radial-gradient(ellipse 55% 45% at 18% 22%, rgba(45, 212, 191, .20), transparent 65%),
+        radial-gradient(ellipse 45% 55% at 85% 78%, rgba(56, 189, 248, .16), transparent 65%),
+        url("data:image/svg+xml,<svg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%27220%27%20height=%27220%27><g%20fill=%27none%27%20stroke=%27%23ffffff%27%20stroke-opacity=%270.08%27%20stroke-width=%271.5%27><path%20d=%27M110%2040%20L58%2070%20L58%20130%20L110%20160%20L162%20130%20L162%2070%20Z%27/><circle%20cx=%27110%27%20cy=%27110%27%20r=%2726%27/></g><g%20fill=%27%23ffffff%27%20fill-opacity=%270.10%27><circle%20cx=%27110%27%20cy=%2740%27%20r=%274%27/><circle%20cx=%27110%27%20cy=%27160%27%20r=%274%27/><circle%20cx=%2758%27%20cy=%27130%27%20r=%273%27/><circle%20cx=%27162%27%20cy=%2770%27%20r=%273%27/></g></svg>");
+      background-size: cover, cover, 220px 220px;
+    }
+    .cover .cover-main { max-width: 640px; }
+    .cover .cover-main > *:first-child { margin-top: 2rem; }
+    .cover h1 {
+      font-size: clamp(2.3rem, 6vw, 3.3rem); font-weight: 700;
+      letter-spacing: .05em; margin: 1.2rem 0 0; text-shadow: 0 2px 24px rgba(0,0,0,.35);
+    }
+    .cover h1::after {
+      content: ""; display: block; width: 64px; height: 4px; border-radius: 99px;
+      margin: 20px auto 0; background: linear-gradient(90deg, #2dd4bf, #38bdf8);
+    }
+    .cover blockquote {
+      border: none; color: rgba(255, 255, 255, .85);
+      font-size: 1.3rem; font-weight: 400; margin: 1.4em 0;
+    }
+    .cover .cover-main p strong {
+      display: inline-block; padding: .38em 1.2em; border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, .35); background: rgba(255, 255, 255, .08);
+      font-size: .78rem; letter-spacing: .28em; font-weight: 500; color: rgba(255, 255, 255, .92);
+    }
+    .cover-main a {
+      display: inline-block; margin: .5em .45em 0; padding: .68em 1.9em; border-radius: 999px;
+      font-weight: 600; font-size: 1rem; border: 1.5px solid rgba(255, 255, 255, .5);
+      color: #fff; transition: all .2s ease;
+    }
+    .cover-main a:hover { background: rgba(255, 255, 255, .16); border-color: #fff; transform: translateY(-2px); }
+    .cover-main p a:first-child { background: #fff; color: #0f766e; border-color: #fff; }
+    .cover-main p a:first-child:hover { background: rgba(255, 255, 255, .92); color: #042f2e; }
+
+    /* ===== 侧边栏 ===== */
+    .sidebar { background: var(--codeBackgroundColor); border-right: 1px solid var(--borderColor); }
+    .sidebar > h1 { font-size: 19px; font-weight: 700; letter-spacing: .03em; margin-bottom: .4rem; }
+    .sidebar > h1 a { color: var(--accent); }
+    .sidebar .search { margin: 14px 14px 4px; }
+    .sidebar .search .input-wrap input {
+      border-radius: 999px; border: 1px solid var(--borderColor);
+      background: var(--background); padding: 7px 14px; transition: border-color .15s, box-shadow .15s;
+    }
+    .sidebar .search .input-wrap input:focus {
+      outline: none; border-color: var(--accent);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+    }
+    .sidebar-nav > ul > li > p, .sidebar-nav > ul > li > p strong {
+      font-size: 12.5px; font-weight: 700; letter-spacing: .14em;
+      color: color-mix(in srgb, var(--textColor) 52%, var(--background)); margin-top: 1.3em;
+    }
+    .sidebar .sidebar-nav a {
+      display: block; padding: 3px 10px; border-radius: 8px; line-height: 1.55;
+      color: var(--textColor); transition: background .15s, color .15s;
+    }
+    .sidebar .sidebar-nav a:hover {
+      background: color-mix(in srgb, var(--accent) 10%, transparent); color: var(--accent);
+    }
+    .sidebar .sidebar-nav li.active > a, .sidebar .sidebar-nav a.active {
+      background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); font-weight: 600;
+    }
+    .sidebar .app-sub-sidebar li.active > a { color: var(--accent); opacity: 1; font-weight: 600; }
+    .sidebar .app-sub-sidebar a { font-size: 13px; opacity: .8; }
+
+    /* ===== 正文排版 ===== */
+    .markdown-section { max-width: 820px; padding: 44px 56px 64px; line-height: 1.75; }
+    .markdown-section h1 { font-size: 2rem; font-weight: 700; padding-bottom: .4em; border-bottom: 2px solid var(--borderColor); }
+    .markdown-section h2 {
+      font-size: 1.42rem; font-weight: 700; margin-top: 2.2em;
+      padding-left: .55em; border-left: 4px solid var(--accent); line-height: 1.35;
+    }
+    .markdown-section h3 { font-size: 1.16rem; font-weight: 700; margin-top: 1.8em; }
+    .markdown-section a { border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
+    .markdown-section a:hover { border-bottom-color: var(--accent); }
+    .markdown-section hr { border: none; border-bottom: 1px solid var(--borderColor); margin: 2.4em 0; }
+    .markdown-section em { color: color-mix(in srgb, var(--textColor) 72%, var(--background)); }
+
+    /* 表格：圆角、彩色表头、斑马纹、悬停 */
+    .markdown-section table {
+      display: table; width: auto; max-width: 100%; margin: 1.6em 0;
+      border-collapse: separate; border-spacing: 0;
+      border: 1px solid var(--borderColor); border-radius: 12px; overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+    }
+    .markdown-section th {
+      background: color-mix(in srgb, var(--accent) 13%, var(--background));
+      border: none; border-bottom: 1px solid var(--borderColor);
+      padding: 9px 15px; font-weight: 700; white-space: nowrap;
+    }
+    .markdown-section td { border: none; border-top: 1px solid var(--borderColor); padding: 8px 15px; }
+    .markdown-section thead tr, .markdown-section thead th { background: color-mix(in srgb, var(--accent) 13%, var(--background)); }
+    .markdown-section tbody tr:nth-child(2n) { background: color-mix(in srgb, var(--accent) 4%, var(--background)); }
+    .markdown-section tbody tr:hover { background: color-mix(in srgb, var(--accent) 9%, var(--background)); }
+
+    /* 引用块：着色圆角 */
+    .markdown-section blockquote {
+      background: color-mix(in srgb, var(--accent) 7%, var(--background));
+      border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0;
+      padding: 10px 18px; color: var(--textColor); margin: 1.6em 0;
+    }
+
+    /* 行内代码与代码块 */
+    .markdown-section code {
+      background: color-mix(in srgb, var(--accent) 10%, var(--background));
+      color: var(--highlightColor); border-radius: 6px; padding: 2px 7px;
+      font-size: .88em; font-weight: 600;
+    }
+    .markdown-section pre { border-radius: 12px; border: 1px solid var(--borderColor); }
+    .markdown-section pre code { background: none; color: var(--codeTextColor); padding: 0; font-weight: 400; }
+
+    /* ===== 主题切换按钮 ===== */
+    #docsify-darklight-theme {
+      width: 30px; height: 30px; right: 14px; top: 18px; border-radius: 50%;
+      background-color: color-mix(in srgb, var(--accent) 13%, var(--background));
+      background-size: 58%; background-position: center;
+      border: 1px solid var(--borderColor); box-shadow: 0 1px 5px rgba(0, 0, 0, .12);
+      transition: transform .15s ease;
+    }
+    #docsify-darklight-theme:hover { transform: scale(1.12); }
+
+    /* ===== 上一章 / 下一章卡片 ===== */
+    .docsify-pagination-container { margin-top: 3em; display: flex; gap: 14px; }
+    .pagination-item {
+      border: 1px solid var(--borderColor); border-radius: 12px; padding: 12px 18px;
+      transition: border-color .15s, box-shadow .15s, transform .15s;
+    }
+    .pagination-item:hover {
+      border-color: var(--accent); box-shadow: 0 4px 14px rgba(0, 0, 0, .09); transform: translateY(-2px);
+    }
+    .pagination-item-label { font-size: 12px; font-weight: 700; letter-spacing: .12em; color: var(--accent); opacity: 1; }
+    .pagination-item-title { font-size: 1.05em; font-weight: 600; opacity: 1; }
+    .pagination-item-subtitle { text-transform: none; opacity: .45; }
   </style>
 </head>
 <body>
@@ -32,9 +164,10 @@
   <noscript>本站使用 docsify 渲染，需要启用 JavaScript。也可以直接在 <a href="https://github.com/clidxhk/AI4Chem">GitHub 仓库</a> 阅读 Markdown 原文。</noscript>
   <script>
     window.$docsify = {
-      name: 'AI4Chem 共学',
+      name: '🧪 AI4Chem 共学',
       nameLink: '/',
       homepage: 'README.md',
+      coverpage: true,
       loadSidebar: true,
       subMaxLevel: 3,
       auto2top: true,
@@ -51,16 +184,19 @@
         crossChapterText: true
       },
       darklightTheme: {
-        siteFont: '-apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif',
+        siteFont: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif',
         bodyFontSize: '16px',
         defaultTheme: 'light',
+        coverBackground: 'linear-gradient(135deg, #022c22 0%, #0f766e 48%, #155e75 100%)',
         light: {
           accent: '#0f766e',
-          toogleImage: 'url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMzNDQ5NWUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLW1vb24iPjxwYXRoIGQ9Ik0yMSAxMi43OUE5IDkgMCAxIDEgMTEuMjEgMyA3IDcgMCAwIDAgMjEgMTIuNzl6Ij48L3BhdGg+PC9zdmc+")'
+          toogleImage: 'url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMzNDQ5NWUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLW1vb24iPjxwYXRoIGQ9Ik0yMSAxMi43OUE5IDkgMCAxIDEgMTEuMjEgMyA3IDcgMCAwIDAgMjEgMTIuNzl6Ij48L3BhdGg+PC9zdmc+")',
+          coverBackground: 'linear-gradient(135deg, #022c22 0%, #0f766e 48%, #155e75 100%)'
         },
         dark: {
           accent: '#2dd4bf',
-          toogleImage: 'url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLXN1biI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNSI+PC9jaXJjbGU+PGxpbmUgeDE9IjEyIiB5MT0iMSIgeDI9IjEyIiB5Mj0iMyI+PC9saW5lPjxsaW5lIHgxPSIxMiIgeTE9IjIxIiB4Mj0iMTIiIHkyPSIyMyI+PC9saW5lPjxsaW5lIHgxPSI0LjIyIiB5MT0iNC4yMiIgeDI9IjUuNjQiIHkyPSI1LjY0Ij48L2xpbmU+PGxpbmUgeDE9IjE4LjM2IiB5MT0iMTguMzYiIHgyPSIxOS43OCIgeTI9IjE5Ljc4Ij48L2xpbmU+PGxpbmUgeDE9IjEiIHkxPSIxMiIgeDI9IjMiIHkyPSIxMiI+PC9saW5lPjxsaW5lIHgxPSIyMSIgeTE9IjEyIiB4Mj0iMjMiIHkyPSIxMiI+PC9saW5lPjxsaW5lIHgxPSI0LjIyIiB5MT0iMTkuNzgiIHgyPSI1LjY0IiB5Mj0iMTguMzYiPjwvbGluZT48bGluZSB4MT0iMTguMzYiIHkxPSI1LjY0IiB4Mj0iMTkuNzgiIHkyPSI0LjIyIj48L2xpbmU+PC9zdmc+")'
+          toogleImage: 'url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLXN1biI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNSI+PC9jaXJjbGU+PGxpbmUgeDE9IjEyIiB5MT0iMSIgeDI9IjEyIiB5Mj0iMyI+PC9saW5lPjxsaW5lIHgxPSIxMiIgeTE9IjIxIiB4Mj0iMTIiIHkyPSIyMyI+PC9saW5lPjxsaW5lIHgxPSI0LjIyIiB5MT0iNC4yMiIgeDI9IjUuNjQiIHkyPSI1LjY0Ij48L2xpbmU+PGxpbmUgeDE9IjE4LjM2IiB5MT0iMTguMzYiIHgyPSIxOS43OCIgeTI9IjE5Ljc4Ij48L2xpbmU+PGxpbmUgeDE9IjEiIHkxPSIxMiIgeDI9IjMiIHkyPSIxMiI+PC9saW5lPjxsaW5lIHgxPSIyMSIgeTE9IjEyIiB4Mj0iMjMiIHkyPSIxMiI+PC9saW5lPjxsaW5lIHgxPSI0LjIyIiB5MT0iMTkuNzgiIHgyPSI1LjY0IiB5Mj0iMTguMzYiPjwvbGluZT48bGluZSB4MT0iMTguMzYiIHkxPSI1LjY0IiB4Mj0iMTkuNzgiIHkyPSI0LjIyIj48L2xpbmU+PC9zdmc+")',
+          coverBackground: 'linear-gradient(135deg, #022c22 0%, #0f766e 48%, #155e75 100%)'
         }
       }
     };

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI4Chem 共学</title>
+  <meta name="description" content="课题组 AI for Chem 共学班资料库与学习手册：讨论记录、成员笔记与整理讲义。">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%A7%AA</text></svg>">
+  <link rel="stylesheet" href="web/vendor/darklight.css" title="docsify-darklight-theme">
+  <style>
+    /* 阅读体验微调（配合 darklight 主题变量，明暗两套自动生效） */
+    .markdown-section { max-width: 860px; }
+    .markdown-section table { display: table; width: auto; max-width: 100%; }
+    .markdown-section th, .markdown-section td {
+      border: 1px solid var(--borderColor);
+      padding: 6px 14px;
+      line-height: 1.6;
+    }
+    .markdown-section thead tr { background: var(--codeBackgroundColor); }
+    .markdown-section tbody tr:nth-child(2n) { background: var(--codeBackgroundColor); }
+    .markdown-section th { white-space: nowrap; }
+    .markdown-section h1, .markdown-section h2, .markdown-section h3 { border-bottom: 1px solid var(--borderColor); padding-bottom: .3em; }
+    .markdown-section blockquote { border-left: 4px solid var(--accent); }
+    /* 侧边栏顶部站名 */
+    .sidebar > h1 { font-size: 20px; }
+    .sidebar > h1 a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div id="app">正在加载……</div>
+  <noscript>本站使用 docsify 渲染，需要启用 JavaScript。也可以直接在 <a href="https://github.com/clidxhk/AI4Chem">GitHub 仓库</a> 阅读 Markdown 原文。</noscript>
+  <script>
+    window.$docsify = {
+      name: 'AI4Chem 共学',
+      nameLink: '/',
+      homepage: 'README.md',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      auto2top: true,
+      search: {
+        paths: 'auto',
+        placeholder: { '/': '搜索手册与文档' },
+        noData: { '/': '没有找到相关内容' },
+        depth: 3
+      },
+      pagination: {
+        previousText: '上一章',
+        nextText: '下一章',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      darklightTheme: {
+        siteFont: '-apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif',
+        bodyFontSize: '16px',
+        defaultTheme: 'light',
+        light: {
+          accent: '#0f766e',
+          toogleImage: 'url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiMzNDQ5NWUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLW1vb24iPjxwYXRoIGQ9Ik0yMSAxMi43OUE5IDkgMCAxIDEgMTEuMjEgMyA3IDcgMCAwIDAgMjEgMTIuNzl6Ij48L3BhdGg+PC9zdmc+")'
+        },
+        dark: {
+          accent: '#2dd4bf',
+          toogleImage: 'url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLXN1biI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNSI+PC9jaXJjbGU+PGxpbmUgeDE9IjEyIiB5MT0iMSIgeDI9IjEyIiB5Mj0iMyI+PC9saW5lPjxsaW5lIHgxPSIxMiIgeTE9IjIxIiB4Mj0iMTIiIHkyPSIyMyI+PC9saW5lPjxsaW5lIHgxPSI0LjIyIiB5MT0iNC4yMiIgeDI9IjUuNjQiIHkyPSI1LjY0Ij48L2xpbmU+PGxpbmUgeDE9IjE4LjM2IiB5MT0iMTguMzYiIHgyPSIxOS43OCIgeTI9IjE5Ljc4Ij48L2xpbmU+PGxpbmUgeDE9IjEiIHkxPSIxMiIgeDI9IjMiIHkyPSIxMiI+PC9saW5lPjxsaW5lIHgxPSIyMSIgeTE9IjEyIiB4Mj0iMjMiIHkyPSIxMiI+PC9saW5lPjxsaW5lIHgxPSI0LjIyIiB5MT0iMTkuNzgiIHgyPSI1LjY0IiB5Mj0iMTguMzYiPjwvbGluZT48bGluZSB4MT0iMTguMzYiIHkxPSI1LjY0IiB4Mj0iMTkuNzgiIHkyPSI0LjIyIj48L2xpbmU+PC9zdmc+")'
+        }
+      }
+    };
+  </script>
+  <script src="web/vendor/docsify.min.js"></script>
+  <script src="web/vendor/search.min.js"></script>
+  <script src="web/vendor/pagination.min.js"></script>
+  <script src="web/vendor/darklight.js"></script>
+</body>
+</html>

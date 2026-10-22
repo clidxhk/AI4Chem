@@ -68,8 +68,14 @@ GPT 是这类模型的一个系列，ChatGPT 则把模型能力做成了人们�
 这时，可以让模型根据当前结果决定下一步，调用合适的工具，再查看结果是否满足要求。
 
 **围绕一个目标，能够选择行动、使用工具，并根据结果继续推进工作的 AI 系统，称为 Agent（智能体）。**
+从组成上看，**今天常见的 LLM Agent = Model（模型）＋ Harness（运行框架）。**
+
+Model 负责理解要求、处理材料，并判断下一步做什么。
+Harness 是围绕模型搭建的软件运行框架，负责连接工具、安排操作执行、记录进度，并把执行结果交回模型，支持它继续处理任务。
+
+在上面的例子中，模型判断扫描件需要文字识别，Harness 就把文件交给识别工具，再把识别结果交回模型；模型随后继续提取论文内容。
 用工具打开文件、检索资料或运行计算，通常称为**工具调用**。
-模型负责判断下一步做什么，应用连接的工具负责完成相应操作，并把结果交回来。
+**我们实际使用的 Agent，就是模型与运行框架配合起来形成的整套工作系统。**[LangChain，The Anatomy of an Agent Harness](https://www.langchain.com/blog/the-anatomy-of-an-agent-harness)
 
 于是，一项任务可以这样进行：用户提出整理要求，系统读取论文，发现缺项后补查，继续整理，最后交付表格。
 **Workflow 把常见步骤安排好，Agent 根据执行情况选择下一步；两者可以结合在同一套应用里。**
@@ -159,7 +165,8 @@ Manus 把多步执行做成可直接使用的服务，OpenClaw 则让个人助�
 Agent 的使用场景由编程和流程搭建，进一步扩展到资料整理、日常事务和个人工作。
 
 从早期 ChatGPT 到这些产品，用户交给 AI 的内容逐渐从一个问题扩展为一项工作。
-模型提供语言处理与判断能力，工具完成具体操作，Workflow 与多 Agent 协作帮助组织较长的任务；这些能力被整合进产品后，使用者就可以通过熟悉的对话方式调用它们。
+模型提供语言处理与判断能力，Harness 把工具、任务记录和执行过程组织起来，两者结合成能够持续工作的 Agent。
+Workflow 安排常见步骤，多 Agent 协作承担任务分工；产品把这些能力整合起来，使用者就可以通过熟悉的对话方式调用它们。
 
 ### 5.1.4 上下文与记忆支持任务连续进行
 
@@ -415,6 +422,9 @@ IDE 指集成开发环境；VS Code 是可扩展编辑器，安装扩展后可�
 它组织上下文、工具连接、任务状态、执行循环、权限与反馈，使模型能够在具体环境中工作。
 例如，文献处理到第五篇时程序报错，系统需要保留已处理记录、把错误返回，并避免重做或覆盖前面的结果。
 
+同一个模型接入不同的 Harness，可以获得不同的工具和工作方式；同一套 Harness 也可以接入它支持的不同模型。[LangChain，On Agent Frameworks and Agent Observability](https://www.langchain.com/blog/on-agent-frameworks-and-agent-observability)
+因此，选择 Agent 产品时，需要一起了解它使用什么模型，以及运行框架能组织哪些实际工作。[Anthropic，Effective harnesses for long-running agents](https://www.anthropic.com/research/effective-harnesses-for-long-running-agents)
+
 ![语言模型在应用中连接检索、工具和记忆等外部能力](https://clidxhk.github.io/AI4Chem/手册/通用版/图片/第五部分/augmented-llm.png)
 
 *图 5-6　围绕模型连接外部能力。来源：[Anthropic，Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)，原图中的 augmented LLM。*
@@ -560,7 +570,7 @@ Agent 开始任务前写出的执行计划，则是在说明要修改什么、�
 
 ## 5.6 本章小结
 
-1. **Agent 把目标、模型与工具连接为执行过程。** 使用者需要说清资料、边界和完成标准，再检查实际操作与产物。
+1. **今天常见的 LLM Agent 是 Model 与 Harness 的结合。** 模型处理信息、判断行动，运行框架连接工具、组织执行并反馈结果。使用者需要说清资料、边界和完成标准，再检查实际操作与产物。
 2. **RAG 为回答提供外部材料。** 资料是否相关、是否完整，以及回答是否得到证据支持，需要分别检查；科研结果尤其要保留对象、单位、条件和来源位置。
 3. **Skill 保存可复用的专业方法。** 先把一次任务做好，再提炼用途、步骤、参考、输出与失败处理，并用新材料试用和修订。
 4. **模型、服务平台与产品承担不同作用。** 比较工具时，记录具体版本与配置，用同一真实任务检查读取、执行、专业处理、耗时和费用。

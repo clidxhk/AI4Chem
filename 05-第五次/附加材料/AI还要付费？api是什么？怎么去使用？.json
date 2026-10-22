@@ -1,0 +1,756 @@
+{
+  "font_size": 0.4,
+  "font_color": "#FFFFFF",
+  "background_alpha": 0.5,
+  "background_color": "#9C27B0",
+  "Stroke": "none",
+  "type": "AIsubtitle",
+  "lang": "zh",
+  "version": "v1.7.0.4",
+  "body": [
+    {
+      "from": 0.5,
+      "to": 1.82,
+      "sid": 1,
+      "location": 2,
+      "content": "AI还要付费",
+      "music": 0.0
+    },
+    {
+      "from": 1.82,
+      "to": 3.16,
+      "sid": 2,
+      "location": 2,
+      "content": "API是什么",
+      "music": 0.0
+    },
+    {
+      "from": 3.16,
+      "to": 4.92,
+      "sid": 3,
+      "location": 2,
+      "content": "收费AI到底怎么用",
+      "music": 0.0
+    },
+    {
+      "from": 4.92,
+      "to": 7.0,
+      "sid": 4,
+      "location": 2,
+      "content": "发现很多人有这样的疑问",
+      "music": 0.0
+    },
+    {
+      "from": 7.0,
+      "to": 7.96,
+      "sid": 5,
+      "location": 2,
+      "content": "简单来说",
+      "music": 0.0
+    },
+    {
+      "from": 7.96,
+      "to": 10.1,
+      "sid": 6,
+      "location": 2,
+      "content": "像豆包DPCC等AI",
+      "music": 0.0
+    },
+    {
+      "from": 10.1,
+      "to": 13.71,
+      "sid": 7,
+      "location": 2,
+      "content": "你在他们专门的软件里面是可以免费使用的",
+      "music": 0.0
+    },
+    {
+      "from": 13.71,
+      "to": 16.29,
+      "sid": 8,
+      "location": 2,
+      "content": "但是如果你想不进入他们的软件",
+      "music": 0.0
+    },
+    {
+      "from": 16.29,
+      "to": 18.439,
+      "sid": 9,
+      "location": 2,
+      "content": "去使用他们的AI功能的话",
+      "music": 0.0
+    },
+    {
+      "from": 18.439,
+      "to": 20.499,
+      "sid": 10,
+      "location": 2,
+      "content": "就需要用到付费的API",
+      "music": 0.0
+    },
+    {
+      "from": 20.499,
+      "to": 21.379,
+      "sid": 11,
+      "location": 2,
+      "content": "打个比方",
+      "music": 0.0
+    },
+    {
+      "from": 21.379,
+      "to": 22.75,
+      "sid": 12,
+      "location": 2,
+      "content": "你去餐厅吃饭",
+      "music": 0.0
+    },
+    {
+      "from": 22.75,
+      "to": 25.49,
+      "sid": 13,
+      "location": 2,
+      "content": "在店里用餐厅的桌椅是免费的",
+      "music": 0.0
+    },
+    {
+      "from": 25.49,
+      "to": 27.59,
+      "sid": 14,
+      "location": 2,
+      "content": "但如果你想把菜送到家里",
+      "music": 0.0
+    },
+    {
+      "from": 27.59,
+      "to": 28.96,
+      "sid": 15,
+      "location": 2,
+      "content": "送到办公室吃",
+      "music": 0.0
+    },
+    {
+      "from": 28.96,
+      "to": 30.88,
+      "sid": 16,
+      "location": 2,
+      "content": "就需要叫外卖API",
+      "music": 0.0
+    },
+    {
+      "from": 30.88,
+      "to": 32.2,
+      "sid": 17,
+      "location": 2,
+      "content": "就是那个外卖系统",
+      "music": 0.0
+    },
+    {
+      "from": 32.2,
+      "to": 34.42,
+      "sid": 18,
+      "location": 2,
+      "content": "他把AI能力送到任何地方",
+      "music": 0.0
+    },
+    {
+      "from": 34.42,
+      "to": 35.8,
+      "sid": 19,
+      "location": 2,
+      "content": "不限于餐厅里",
+      "music": 0.0
+    },
+    {
+      "from": 35.8,
+      "to": 36.86,
+      "sid": 20,
+      "location": 2,
+      "content": "有了API",
+      "music": 0.0
+    },
+    {
+      "from": 36.86,
+      "to": 39.42,
+      "sid": 21,
+      "location": 2,
+      "content": "你不用到专门的软件上去使用AI",
+      "music": 0.0
+    },
+    {
+      "from": 39.42,
+      "to": 41.0,
+      "sid": 22,
+      "location": 2,
+      "content": "那么如何来使用呢",
+      "music": 0.0
+    },
+    {
+      "from": 41.0,
+      "to": 42.64,
+      "sid": 23,
+      "location": 2,
+      "content": "我以deep sick为举例",
+      "music": 0.0
+    },
+    {
+      "from": 42.64,
+      "to": 44.019,
+      "sid": 24,
+      "location": 2,
+      "content": "首先打开官网",
+      "music": 0.0
+    },
+    {
+      "from": 44.019,
+      "to": 46.559,
+      "sid": 25,
+      "location": 2,
+      "content": "看到右边的API开发平台的按钮",
+      "music": 0.0
+    },
+    {
+      "from": 46.559,
+      "to": 48.979,
+      "sid": 26,
+      "location": 2,
+      "content": "点进去就能看到自己账号信息",
+      "music": 0.0
+    },
+    {
+      "from": 48.979,
+      "to": 52.75,
+      "sid": 27,
+      "location": 2,
+      "content": "然后我们点击左侧导航栏下面的第二个API",
+      "music": 0.0
+    },
+    {
+      "from": 52.75,
+      "to": 53.65,
+      "sid": 28,
+      "location": 2,
+      "content": "kiss选项",
+      "music": 0.0
+    },
+    {
+      "from": 53.65,
+      "to": 55.29,
+      "sid": 29,
+      "location": 2,
+      "content": "那么API key是什么",
+      "music": 0.0
+    },
+    {
+      "from": 55.29,
+      "to": 56.89,
+      "sid": 30,
+      "location": 2,
+      "content": "key翻译过来是钥匙",
+      "music": 0.0
+    },
+    {
+      "from": 56.89,
+      "to": 59.17,
+      "sid": 31,
+      "location": 2,
+      "content": "有了钥匙才能打开对应的门",
+      "music": 0.0
+    },
+    {
+      "from": 59.17,
+      "to": 62.2,
+      "sid": 32,
+      "location": 2,
+      "content": "API key就是你调用API的房卡服务器",
+      "music": 0.0
+    },
+    {
+      "from": 62.2,
+      "to": 64.52,
+      "sid": 33,
+      "location": 2,
+      "content": "看到这张卡才能让你使用AI",
+      "music": 0.0
+    },
+    {
+      "from": 64.52,
+      "to": 66.82,
+      "sid": 34,
+      "location": 2,
+      "content": "然后我们点击创建APIKE",
+      "music": 0.0
+    },
+    {
+      "from": 66.82,
+      "to": 68.66,
+      "sid": 35,
+      "location": 2,
+      "content": "可以给这个key起个名字",
+      "music": 0.0
+    },
+    {
+      "from": 68.66,
+      "to": 70.1,
+      "sid": 36,
+      "location": 2,
+      "content": "为什么要起名字",
+      "music": 0.0
+    },
+    {
+      "from": 70.1,
+      "to": 74.08,
+      "sid": 37,
+      "location": 2,
+      "content": "因为可以创建多个key给不同的项目或工具使用",
+      "music": 0.0
+    },
+    {
+      "from": 74.08,
+      "to": 75.75,
+      "sid": 38,
+      "location": 2,
+      "content": "就像你有多把钥匙",
+      "music": 0.0
+    },
+    {
+      "from": 75.75,
+      "to": 76.93,
+      "sid": 39,
+      "location": 2,
+      "content": "一把开家门",
+      "music": 0.0
+    },
+    {
+      "from": 76.93,
+      "to": 78.33,
+      "sid": 40,
+      "location": 2,
+      "content": "一把开车库门",
+      "music": 0.0
+    },
+    {
+      "from": 78.33,
+      "to": 79.87,
+      "sid": 41,
+      "location": 2,
+      "content": "方便管理和区分",
+      "music": 0.0
+    },
+    {
+      "from": 79.87,
+      "to": 82.11,
+      "sid": 42,
+      "location": 2,
+      "content": "起好名字后点击创建",
+      "music": 0.0
+    },
+    {
+      "from": 82.11,
+      "to": 84.289,
+      "sid": 43,
+      "location": 2,
+      "content": "然后就创建了一个APIKE",
+      "music": 0.0
+    },
+    {
+      "from": 84.289,
+      "to": 85.669,
+      "sid": 44,
+      "location": 2,
+      "content": "然后点击复制",
+      "music": 0.0
+    },
+    {
+      "from": 85.669,
+      "to": 88.709,
+      "sid": 45,
+      "location": 2,
+      "content": "这里要注意deep sick创建的APIKE",
+      "music": 0.0
+    },
+    {
+      "from": 88.709,
+      "to": 91.93,
+      "sid": 46,
+      "location": 2,
+      "content": "只有第一次创建的时候可以看到并复制",
+      "music": 0.0
+    },
+    {
+      "from": 91.93,
+      "to": 93.85,
+      "sid": 47,
+      "location": 2,
+      "content": "这次的这个弹窗关闭了",
+      "music": 0.0
+    },
+    {
+      "from": 93.85,
+      "to": 96.15,
+      "sid": 48,
+      "location": 2,
+      "content": "就再也看不到这个完整的key了",
+      "music": 0.0
+    },
+    {
+      "from": 96.15,
+      "to": 97.63,
+      "sid": 49,
+      "location": 2,
+      "content": "所以需要保存好",
+      "music": 0.0
+    },
+    {
+      "from": 97.63,
+      "to": 100.13,
+      "sid": 50,
+      "location": 2,
+      "content": "否则就需要重新创建一个新的",
+      "music": 0.0
+    },
+    {
+      "from": 100.13,
+      "to": 102.47,
+      "sid": 51,
+      "location": 2,
+      "content": "另外还有一个非常重要的一点",
+      "music": 0.0
+    },
+    {
+      "from": 102.47,
+      "to": 104.83,
+      "sid": 52,
+      "location": 2,
+      "content": "这个API key不用随意泄露",
+      "music": 0.0
+    },
+    {
+      "from": 104.83,
+      "to": 108.33,
+      "sid": 53,
+      "location": 2,
+      "content": "因为别人知道这个key就能去使用你的API",
+      "music": 0.0
+    },
+    {
+      "from": 108.33,
+      "to": 109.86,
+      "sid": 54,
+      "location": 2,
+      "content": "去用你账号里的钱",
+      "music": 0.0
+    },
+    {
+      "from": 109.86,
+      "to": 111.7,
+      "sid": 55,
+      "location": 2,
+      "content": "那么现在有了APIKE",
+      "music": 0.0
+    },
+    {
+      "from": 111.7,
+      "to": 113.92,
+      "sid": 56,
+      "location": 2,
+      "content": "还需知道deep sick的base u RL",
+      "music": 0.0
+    },
+    {
+      "from": 113.92,
+      "to": 115.9,
+      "sid": 57,
+      "location": 2,
+      "content": "也就是deep seek的请求地址",
+      "music": 0.0
+    },
+    {
+      "from": 115.9,
+      "to": 118.17,
+      "sid": 58,
+      "location": 2,
+      "content": "简单来讲就是外卖店的地址",
+      "music": 0.0
+    },
+    {
+      "from": 118.17,
+      "to": 121.95,
+      "sid": 59,
+      "location": 2,
+      "content": "我们可以点开左侧下面的接口文档进行查看",
+      "music": 0.0
+    },
+    {
+      "from": 121.95,
+      "to": 124.67,
+      "sid": 60,
+      "location": 2,
+      "content": "这两个都是我们deep sick的BACRL",
+      "music": 0.0
+    },
+    {
+      "from": 124.67,
+      "to": 126.63,
+      "sid": 61,
+      "location": 2,
+      "content": "通常我们使用的是第一个",
+      "music": 0.0
+    },
+    {
+      "from": 126.63,
+      "to": 130.19,
+      "sid": 62,
+      "location": 2,
+      "content": "然后我们还看到这里有一个model模型的选择",
+      "music": 0.0
+    },
+    {
+      "from": 130.19,
+      "to": 133.21,
+      "sid": 63,
+      "location": 2,
+      "content": "现在deep sick的模型支持的是deep seek",
+      "music": 0.0
+    },
+    {
+      "from": 133.21,
+      "to": 136.49,
+      "sid": 64,
+      "location": 2,
+      "content": "vc flash和deep sk v4pro这两个模型",
+      "music": 0.0
+    },
+    {
+      "from": 136.49,
+      "to": 138.85,
+      "sid": 65,
+      "location": 2,
+      "content": "然后我们就可以拿着这三个信息",
+      "music": 0.0
+    },
+    {
+      "from": 138.85,
+      "to": 141.83,
+      "sid": 66,
+      "location": 2,
+      "content": "到任何支持使用API的软件中去",
+      "music": 0.0
+    },
+    {
+      "from": 141.83,
+      "to": 143.329,
+      "sid": 67,
+      "location": 2,
+      "content": "使用deep sick的AI了",
+      "music": 0.0
+    },
+    {
+      "from": 143.329,
+      "to": 145.009,
+      "sid": 68,
+      "location": 2,
+      "content": "当然别忘了先充钱",
+      "music": 0.0
+    },
+    {
+      "from": 145.009,
+      "to": 146.849,
+      "sid": 69,
+      "location": 2,
+      "content": "API是需要付费的",
+      "music": 0.0
+    },
+    {
+      "from": 146.849,
+      "to": 149.1,
+      "sid": 70,
+      "location": 2,
+      "content": "比如我做了一个简单的聊天窗",
+      "music": 0.0
+    },
+    {
+      "from": 149.1,
+      "to": 151.88,
+      "sid": 71,
+      "location": 2,
+      "content": "填写上刚刚拿到的UROPIT",
+      "music": 0.0
+    },
+    {
+      "from": 151.88,
+      "to": 154.86,
+      "sid": 72,
+      "location": 2,
+      "content": "和选择使用deep sick v4flash的模型",
+      "music": 0.0
+    },
+    {
+      "from": 154.86,
+      "to": 156.28,
+      "sid": 73,
+      "location": 2,
+      "content": "然后输入你好",
+      "music": 0.0
+    },
+    {
+      "from": 156.28,
+      "to": 157.92,
+      "sid": 74,
+      "location": 2,
+      "content": "他就会去调用AI",
+      "music": 0.0
+    },
+    {
+      "from": 157.92,
+      "to": 159.4,
+      "sid": 75,
+      "location": 2,
+      "content": "然后进行回复",
+      "music": 0.0
+    },
+    {
+      "from": 159.4,
+      "to": 161.82,
+      "sid": 76,
+      "location": 2,
+      "content": "这样我们的API就成功使用了",
+      "music": 0.0
+    },
+    {
+      "from": 161.82,
+      "to": 163.4,
+      "sid": 77,
+      "location": 2,
+      "content": "如果有更多的需求",
+      "music": 0.0
+    },
+    {
+      "from": 163.4,
+      "to": 166.34,
+      "sid": 78,
+      "location": 2,
+      "content": "可以去查看官网下面的这个接口文档",
+      "music": 0.0
+    },
+    {
+      "from": 166.34,
+      "to": 170.32,
+      "sid": 79,
+      "location": 2,
+      "content": "这里可能有人要问使用付费的API有什么用呢",
+      "music": 0.0
+    },
+    {
+      "from": 170.32,
+      "to": 172.57,
+      "sid": 80,
+      "location": 2,
+      "content": "为什么不使用软件上免费的",
+      "music": 0.0
+    },
+    {
+      "from": 172.57,
+      "to": 174.47,
+      "sid": 81,
+      "location": 2,
+      "content": "而去使用付费的API呢",
+      "music": 0.0
+    },
+    {
+      "from": 174.47,
+      "to": 177.59,
+      "sid": 82,
+      "location": 2,
+      "content": "因为可以用API做官方软件里做不到的事情",
+      "music": 0.0
+    },
+    {
+      "from": 177.59,
+      "to": 179.0,
+      "sid": 83,
+      "location": 2,
+      "content": "比如使用API",
+      "music": 0.0
+    },
+    {
+      "from": 179.0,
+      "to": 182.1,
+      "sid": 84,
+      "location": 2,
+      "content": "你可以把AI接入excel自动处理表格",
+      "music": 0.0
+    },
+    {
+      "from": 182.1,
+      "to": 183.36,
+      "sid": 85,
+      "location": 2,
+      "content": "接入笔记软件",
+      "music": 0.0
+    },
+    {
+      "from": 183.36,
+      "to": 184.76,
+      "sid": 86,
+      "location": 2,
+      "content": "自动整理内容等等",
+      "music": 0.0
+    },
+    {
+      "from": 184.76,
+      "to": 186.46,
+      "sid": 87,
+      "location": 2,
+      "content": "最后还需要提醒各位",
+      "music": 0.0
+    },
+    {
+      "from": 186.46,
+      "to": 189.68,
+      "sid": 88,
+      "location": 2,
+      "content": "DPCC的API采用的是token用量计费的",
+      "music": 0.0
+    },
+    {
+      "from": 189.68,
+      "to": 191.22,
+      "sid": 89,
+      "location": 2,
+      "content": "要注意API用量",
+      "music": 0.0
+    },
+    {
+      "from": 191.22,
+      "to": 192.78,
+      "sid": 90,
+      "location": 2,
+      "content": "那么什么是token呢",
+      "music": 0.0
+    },
+    {
+      "from": 192.78,
+      "to": 193.91,
+      "sid": 91,
+      "location": 2,
+      "content": "点赞关注",
+      "music": 0.0
+    },
+    {
+      "from": 193.91,
+      "to": 196.65,
+      "sid": 92,
+      "location": 2,
+      "content": "下期教你AI是怎么计费的",
+      "music": 0.0
+    },
+    {
+      "from": 196.65,
+      "to": 198.0,
+      "sid": 93,
+      "location": 2,
+      "content": "token又是什么",
+      "music": 0.0
+    }
+  ]
+}

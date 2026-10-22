@@ -1,0 +1,956 @@
+{
+  "font_size": 0.4,
+  "font_color": "#FFFFFF",
+  "background_alpha": 0.5,
+  "background_color": "#9C27B0",
+  "Stroke": "none",
+  "type": "AIsubtitle",
+  "lang": "zh",
+  "version": "v1.7.0.4",
+  "body": [
+    {
+      "from": 0.1,
+      "to": 1.42,
+      "sid": 1,
+      "location": 2,
+      "content": "你觉得AI不好用",
+      "music": 0.0
+    },
+    {
+      "from": 1.42,
+      "to": 3.44,
+      "sid": 2,
+      "location": 2,
+      "content": "其实往往不是模型不够聪明",
+      "music": 0.0
+    },
+    {
+      "from": 3.44,
+      "to": 4.7,
+      "sid": 3,
+      "location": 2,
+      "content": "而是每次对话的时候",
+      "music": 0.0
+    },
+    {
+      "from": 4.7,
+      "to": 6.52,
+      "sid": 4,
+      "location": 2,
+      "content": "他得从零去猜你想要什么",
+      "music": 0.0
+    },
+    {
+      "from": 6.52,
+      "to": 7.88,
+      "sid": 5,
+      "location": 2,
+      "content": "就像一个米其林大厨",
+      "music": 0.0
+    },
+    {
+      "from": 7.88,
+      "to": 9.72,
+      "sid": 6,
+      "location": 2,
+      "content": "他会做全天下所有的菜系",
+      "music": 0.0
+    },
+    {
+      "from": 9.72,
+      "to": 12.21,
+      "sid": 7,
+      "location": 2,
+      "content": "唯独不会做你外婆家烧的红烧肉",
+      "music": 0.0
+    },
+    {
+      "from": 12.21,
+      "to": 13.87,
+      "sid": 8,
+      "location": 2,
+      "content": "因为它独缺一份秘方",
+      "music": 0.0
+    },
+    {
+      "from": 13.87,
+      "to": 17.14,
+      "sid": 9,
+      "location": 2,
+      "content": "这份秘方就是我们今天要讲的skill",
+      "music": 0.05769230491863886
+    },
+    {
+      "from": 18.58,
+      "to": 20.34,
+      "sid": 10,
+      "location": 2,
+      "content": "skill中文名叫技能",
+      "music": 0.0
+    },
+    {
+      "from": 20.34,
+      "to": 23.36,
+      "sid": 11,
+      "location": 2,
+      "content": "它本质上就是一份提前写好的工作指南",
+      "music": 0.0
+    },
+    {
+      "from": 23.36,
+      "to": 24.76,
+      "sid": 12,
+      "location": 2,
+      "content": "面对同一类任务",
+      "music": 0.0
+    },
+    {
+      "from": 24.76,
+      "to": 26.28,
+      "sid": 13,
+      "location": 2,
+      "content": "该按什么步骤输出",
+      "music": 0.0
+    },
+    {
+      "from": 26.28,
+      "to": 27.02,
+      "sid": 14,
+      "location": 2,
+      "content": "什么样的格式",
+      "music": 0.0
+    },
+    {
+      "from": 27.02,
+      "to": 27.9,
+      "sid": 15,
+      "location": 2,
+      "content": "注意哪些坑",
+      "music": 0.0
+    },
+    {
+      "from": 27.9,
+      "to": 29.36,
+      "sid": 16,
+      "location": 2,
+      "content": "定义一次技能之后",
+      "music": 0.0
+    },
+    {
+      "from": 29.36,
+      "to": 29.96,
+      "sid": 17,
+      "location": 2,
+      "content": "千万办公",
+      "music": 0.0
+    },
+    {
+      "from": 29.96,
+      "to": 31.16,
+      "sid": 18,
+      "location": 2,
+      "content": "每次遇到类似的任务",
+      "music": 0.0
+    },
+    {
+      "from": 31.16,
+      "to": 33.44,
+      "sid": 19,
+      "location": 2,
+      "content": "都会主动识别并应用这个技能",
+      "music": 0.0
+    },
+    {
+      "from": 33.44,
+      "to": 34.52,
+      "sid": 20,
+      "location": 2,
+      "content": "在存储空间里",
+      "music": 0.0
+    },
+    {
+      "from": 34.52,
+      "to": 36.14,
+      "sid": 21,
+      "location": 2,
+      "content": "一个skill就是一个文件夹",
+      "music": 0.0
+    },
+    {
+      "from": 36.14,
+      "to": 38.86,
+      "sid": 22,
+      "location": 2,
+      "content": "核心是一个叫skill到Mark down的文件里面",
+      "music": 0.0
+    },
+    {
+      "from": 38.86,
+      "to": 39.8,
+      "sid": 23,
+      "location": 2,
+      "content": "是技能总览",
+      "music": 0.0
+    },
+    {
+      "from": 39.8,
+      "to": 41.78,
+      "sid": 24,
+      "location": 2,
+      "content": "定义了这个技能的触发边界条件",
+      "music": 0.0
+    },
+    {
+      "from": 41.78,
+      "to": 42.52,
+      "sid": 25,
+      "location": 2,
+      "content": "标准流程",
+      "music": 0.0
+    },
+    {
+      "from": 42.52,
+      "to": 44.39,
+      "sid": 26,
+      "location": 2,
+      "content": "交付内容和可以调用的工具",
+      "music": 0.0
+    },
+    {
+      "from": 44.39,
+      "to": 46.63,
+      "sid": 27,
+      "location": 2,
+      "content": "就是把你脑子里的sop变成AI",
+      "music": 0.0
+    },
+    {
+      "from": 46.63,
+      "to": 48.83,
+      "sid": 28,
+      "location": 2,
+      "content": "可以识别并应用的菜谱",
+      "music": 0.0
+    },
+    {
+      "from": 50.48,
+      "to": 51.88,
+      "sid": 29,
+      "location": 2,
+      "content": "你可能要问哎",
+      "music": 0.0
+    },
+    {
+      "from": 51.88,
+      "to": 53.1,
+      "sid": 30,
+      "location": 2,
+      "content": "这不就是提示词吗",
+      "music": 0.0
+    },
+    {
+      "from": 53.1,
+      "to": 54.32,
+      "sid": 31,
+      "location": 2,
+      "content": "为啥要做成skill呢",
+      "music": 0.0
+    },
+    {
+      "from": 54.32,
+      "to": 55.18,
+      "sid": 32,
+      "location": 2,
+      "content": "有两个原因",
+      "music": 0.0
+    },
+    {
+      "from": 55.18,
+      "to": 57.08,
+      "sid": 33,
+      "location": 2,
+      "content": "第一提示词是一次性的",
+      "music": 0.0
+    },
+    {
+      "from": 57.08,
+      "to": 59.3,
+      "sid": 34,
+      "location": 2,
+      "content": "新开的对话就得重新跟他讲一遍",
+      "music": 0.0
+    },
+    {
+      "from": 59.3,
+      "to": 61.48,
+      "sid": 35,
+      "location": 2,
+      "content": "而skill是自动触发永久生效",
+      "music": 0.0
+    },
+    {
+      "from": 61.48,
+      "to": 63.08,
+      "sid": 36,
+      "location": 2,
+      "content": "并且可以版本管理的",
+      "music": 0.0
+    },
+    {
+      "from": 63.08,
+      "to": 67.04,
+      "sid": 37,
+      "location": 2,
+      "content": "第二是更本质的提示词是一段文字全粘进去",
+      "music": 0.0
+    },
+    {
+      "from": 67.04,
+      "to": 68.48,
+      "sid": 38,
+      "location": 2,
+      "content": "AI更容易顾头不顾尾",
+      "music": 0.0
+    },
+    {
+      "from": 68.48,
+      "to": 70.42,
+      "sid": 39,
+      "location": 2,
+      "content": "而skill是一个结构化的文件夹",
+      "music": 0.0
+    },
+    {
+      "from": 70.42,
+      "to": 72.1,
+      "sid": 40,
+      "location": 2,
+      "content": "主文件只放了流程模板",
+      "music": 0.0
+    },
+    {
+      "from": 72.1,
+      "to": 73.94,
+      "sid": 41,
+      "location": 2,
+      "content": "案例规范都放在附带资料里",
+      "music": 0.0
+    },
+    {
+      "from": 73.94,
+      "to": 76.08,
+      "sid": 42,
+      "location": 2,
+      "content": "AI遇到任务按需打开对应的那一页",
+      "music": 0.0
+    },
+    {
+      "from": 76.08,
+      "to": 77.4,
+      "sid": 43,
+      "location": 2,
+      "content": "这是渐进式的披露",
+      "music": 0.0
+    },
+    {
+      "from": 77.4,
+      "to": 79.82,
+      "sid": 44,
+      "location": 2,
+      "content": "说白了提示词是一整张纸条",
+      "music": 0.0
+    },
+    {
+      "from": 79.82,
+      "to": 81.64,
+      "sid": 45,
+      "location": 2,
+      "content": "skill是一个结构化的目录",
+      "music": 0.0
+    },
+    {
+      "from": 81.64,
+      "to": 82.98,
+      "sid": 46,
+      "location": 2,
+      "content": "一整套工作手册",
+      "music": 0.0
+    },
+    {
+      "from": 82.98,
+      "to": 85.4,
+      "sid": 47,
+      "location": 2,
+      "content": "需要哪张就用哪张",
+      "music": 0.0
+    },
+    {
+      "from": 87.12,
+      "to": 89.0,
+      "sid": 48,
+      "location": 2,
+      "content": "那怎么去创建一个skill呢",
+      "music": 0.0
+    },
+    {
+      "from": 89.0,
+      "to": 91.78,
+      "sid": 49,
+      "location": 2,
+      "content": "最省事的方法是让千万办公自己写",
+      "music": 0.0
+    },
+    {
+      "from": 91.78,
+      "to": 93.14,
+      "sid": 50,
+      "location": 2,
+      "content": "你在对话里直接说",
+      "music": 0.0
+    },
+    {
+      "from": 93.14,
+      "to": 95.68,
+      "sid": 51,
+      "location": 2,
+      "content": "帮我做一个能完成某件事的技能",
+      "music": 0.0
+    },
+    {
+      "from": 95.68,
+      "to": 98.84,
+      "sid": 52,
+      "location": 2,
+      "content": "内置的create skill技能就会一步步带你去完成",
+      "music": 0.0
+    },
+    {
+      "from": 98.84,
+      "to": 100.44,
+      "sid": 53,
+      "location": 2,
+      "content": "还有一个更偷懒的办法",
+      "music": 0.0
+    },
+    {
+      "from": 100.44,
+      "to": 101.8,
+      "sid": 54,
+      "location": 2,
+      "content": "先让他做好一件事",
+      "music": 0.0
+    },
+    {
+      "from": 101.8,
+      "to": 103.56,
+      "sid": 55,
+      "location": 2,
+      "content": "中间你可以跟他不断调整",
+      "music": 0.0
+    },
+    {
+      "from": 103.56,
+      "to": 104.84,
+      "sid": 56,
+      "location": 2,
+      "content": "直到效果你满意了",
+      "music": 0.0
+    },
+    {
+      "from": 104.84,
+      "to": 107.82,
+      "sid": 57,
+      "location": 2,
+      "content": "你就说把刚才我们的流程沉淀成skill",
+      "music": 0.0
+    },
+    {
+      "from": 107.82,
+      "to": 109.32,
+      "sid": 58,
+      "location": 2,
+      "content": "它会自动帮你总结",
+      "music": 0.0
+    },
+    {
+      "from": 109.32,
+      "to": 112.52,
+      "sid": 59,
+      "location": 2,
+      "content": "当然你也可以自己写在扩展页自己上传",
+      "music": 0.0
+    },
+    {
+      "from": 112.52,
+      "to": 115.039,
+      "sid": 60,
+      "location": 2,
+      "content": "你自己规范好需要触发的条件",
+      "music": 0.0
+    },
+    {
+      "from": 115.039,
+      "to": 116.419,
+      "sid": 61,
+      "location": 2,
+      "content": "需要注意的边界",
+      "music": 0.0
+    },
+    {
+      "from": 116.419,
+      "to": 118.779,
+      "sid": 62,
+      "location": 2,
+      "content": "需要完成的流程和需要交付的内容",
+      "music": 0.0
+    },
+    {
+      "from": 118.779,
+      "to": 120.199,
+      "sid": 63,
+      "location": 2,
+      "content": "不管是由谁写的skill",
+      "music": 0.0
+    },
+    {
+      "from": 120.199,
+      "to": 122.879,
+      "sid": 64,
+      "location": 2,
+      "content": "一个合格的skill要讲清楚三件事情",
+      "music": 0.0
+    },
+    {
+      "from": 122.879,
+      "to": 123.879,
+      "sid": 65,
+      "location": 2,
+      "content": "什么时候使用",
+      "music": 0.0
+    },
+    {
+      "from": 123.879,
+      "to": 124.88,
+      "sid": 66,
+      "location": 2,
+      "content": "步骤是什么样",
+      "music": 0.0
+    },
+    {
+      "from": 124.88,
+      "to": 126.38,
+      "sid": 67,
+      "location": 2,
+      "content": "输入和输出是什么样",
+      "music": 0.0
+    },
+    {
+      "from": 126.38,
+      "to": 127.64,
+      "sid": 68,
+      "location": 2,
+      "content": "同时你需要明确好",
+      "music": 0.0
+    },
+    {
+      "from": 127.64,
+      "to": 129.08,
+      "sid": 69,
+      "location": 2,
+      "content": "如果这个skill调用失败了",
+      "music": 0.0
+    },
+    {
+      "from": 129.08,
+      "to": 131.36,
+      "sid": 70,
+      "location": 2,
+      "content": "需要用什么样的方式去处理",
+      "music": 0.0
+    },
+    {
+      "from": 132.899,
+      "to": 135.219,
+      "sid": 71,
+      "location": 2,
+      "content": "那什么样的任务需要被做成skill呢",
+      "music": 0.0
+    },
+    {
+      "from": 135.219,
+      "to": 137.339,
+      "sid": 72,
+      "location": 2,
+      "content": "其实从今年1月份OPENCORE出来",
+      "music": 0.0
+    },
+    {
+      "from": 137.339,
+      "to": 138.419,
+      "sid": 73,
+      "location": 2,
+      "content": "搭配上opp4.6",
+      "music": 0.0
+    },
+    {
+      "from": 138.419,
+      "to": 140.679,
+      "sid": 74,
+      "location": 2,
+      "content": "AI就有了非常强的AGENTIC能力",
+      "music": 0.0
+    },
+    {
+      "from": 140.679,
+      "to": 141.979,
+      "sid": 75,
+      "location": 2,
+      "content": "我们团队当时的规范是",
+      "music": 0.0
+    },
+    {
+      "from": 141.979,
+      "to": 144.98,
+      "sid": 76,
+      "location": 2,
+      "content": "如果你这一周做这件事情已经做到第三次了",
+      "music": 0.0
+    },
+    {
+      "from": 144.98,
+      "to": 146.68,
+      "sid": 77,
+      "location": 2,
+      "content": "那你就要想办法把它自动化掉",
+      "music": 0.0
+    },
+    {
+      "from": 146.68,
+      "to": 148.98,
+      "sid": 78,
+      "location": 2,
+      "content": "总结来说需要你重复去做的事情",
+      "music": 0.0
+    },
+    {
+      "from": 148.98,
+      "to": 152.26,
+      "sid": 79,
+      "location": 2,
+      "content": "并且它有固定的格式和固定的交付标准",
+      "music": 0.0
+    },
+    {
+      "from": 152.26,
+      "to": 153.9,
+      "sid": 80,
+      "location": 2,
+      "content": "同时你觉得他是值得被沉淀",
+      "music": 0.0
+    },
+    {
+      "from": 153.9,
+      "to": 156.48,
+      "sid": 81,
+      "location": 2,
+      "content": "甚至是值得被分享给你团队内其他人的",
+      "music": 0.0
+    },
+    {
+      "from": 156.48,
+      "to": 159.9,
+      "sid": 82,
+      "location": 2,
+      "content": "这些所有的流程都是值得被做成skill的",
+      "music": 0.0
+    },
+    {
+      "from": 161.68,
+      "to": 164.28,
+      "sid": 83,
+      "location": 2,
+      "content": "在你动手自己去创建一个skill之前",
+      "music": 0.0
+    },
+    {
+      "from": 164.28,
+      "to": 165.92,
+      "sid": 84,
+      "location": 2,
+      "content": "可以先看看别人做好的",
+      "music": 0.0
+    },
+    {
+      "from": 165.92,
+      "to": 168.92,
+      "sid": 85,
+      "location": 2,
+      "content": "在扩展技能的公开市场里就有一个技能广场",
+      "music": 0.0
+    },
+    {
+      "from": 168.92,
+      "to": 171.27,
+      "sid": 86,
+      "location": 2,
+      "content": "官方的和社区的技能成百上千",
+      "music": 0.0
+    },
+    {
+      "from": 171.27,
+      "to": 171.99,
+      "sid": 87,
+      "location": 2,
+      "content": "一键安装",
+      "music": 0.0
+    },
+    {
+      "from": 171.99,
+      "to": 173.23,
+      "sid": 88,
+      "location": 2,
+      "content": "你就不用自己去创建",
+      "music": 0.0
+    },
+    {
+      "from": 173.23,
+      "to": 175.15,
+      "sid": 89,
+      "location": 2,
+      "content": "如果你不愿意点进去一个一个查找",
+      "music": 0.0
+    },
+    {
+      "from": 175.15,
+      "to": 177.95,
+      "sid": 90,
+      "location": 2,
+      "content": "直接说帮我找一个能做某件事情的技能",
+      "music": 0.0
+    },
+    {
+      "from": 177.95,
+      "to": 180.27,
+      "sid": 91,
+      "location": 2,
+      "content": "他会替你去搜索安装",
+      "music": 0.0
+    },
+    {
+      "from": 181.6,
+      "to": 185.38,
+      "sid": 92,
+      "location": 2,
+      "content": "在千万办公里更广泛的skill其实就是专家套件",
+      "music": 0.0
+    },
+    {
+      "from": 185.38,
+      "to": 186.98,
+      "sid": 93,
+      "location": 2,
+      "content": "理解了刚刚我们讲的skill",
+      "music": 0.0
+    },
+    {
+      "from": 186.98,
+      "to": 188.16,
+      "sid": 94,
+      "location": 2,
+      "content": "这个就更好懂了",
+      "music": 0.0
+    },
+    {
+      "from": 188.16,
+      "to": 189.92,
+      "sid": 95,
+      "location": 2,
+      "content": "skill是一件趁手的工具",
+      "music": 0.0
+    },
+    {
+      "from": 189.92,
+      "to": 192.4,
+      "sid": 96,
+      "location": 2,
+      "content": "专家套件就是整个工作岗位的工具箱",
+      "music": 0.0
+    },
+    {
+      "from": 192.4,
+      "to": 194.06,
+      "sid": 97,
+      "location": 2,
+      "content": "他把多个技能数据连接",
+      "music": 0.0
+    },
+    {
+      "from": 194.06,
+      "to": 197.38,
+      "sid": 98,
+      "location": 2,
+      "content": "快捷命令和输出标准打包成了一套岗位方案",
+      "music": 0.0
+    },
+    {
+      "from": 197.38,
+      "to": 200.02,
+      "sid": 99,
+      "location": 2,
+      "content": "比如法务套件内置了合同审查",
+      "music": 0.0
+    },
+    {
+      "from": 200.02,
+      "to": 201.92,
+      "sid": 100,
+      "location": 2,
+      "content": "文书起草等几十个技能",
+      "music": 0.0
+    },
+    {
+      "from": 201.92,
+      "to": 204.42,
+      "sid": 101,
+      "location": 2,
+      "content": "在扩展专家套件中点击加号安装",
+      "music": 0.0
+    },
+    {
+      "from": 204.42,
+      "to": 205.65,
+      "sid": 102,
+      "location": 2,
+      "content": "用斜杠就能调用",
+      "music": 0.0
+    },
+    {
+      "from": 205.65,
+      "to": 206.61,
+      "sid": 103,
+      "location": 2,
+      "content": "对于企业来讲",
+      "music": 0.0
+    },
+    {
+      "from": 206.61,
+      "to": 209.29,
+      "sid": 104,
+      "location": 2,
+      "content": "最有价值的用法是让真正懂业务的人",
+      "music": 0.0
+    },
+    {
+      "from": 209.29,
+      "to": 211.73,
+      "sid": 105,
+      "location": 2,
+      "content": "把岗位流程和判断标准做成一个套件",
+      "music": 0.0
+    },
+    {
+      "from": 211.73,
+      "to": 213.24,
+      "sid": 106,
+      "location": 2,
+      "content": "全部员工一键安装",
+      "music": 0.0
+    },
+    {
+      "from": 213.24,
+      "to": 214.86,
+      "sid": 107,
+      "location": 2,
+      "content": "大家用的是同一套标准",
+      "music": 0.0
+    },
+    {
+      "from": 214.86,
+      "to": 217.6,
+      "sid": 108,
+      "location": 2,
+      "content": "你同样可以用自然语言描述岗位和流程",
+      "music": 0.0
+    },
+    {
+      "from": 217.6,
+      "to": 220.18,
+      "sid": 109,
+      "location": 2,
+      "content": "让千文办公帮你生成专家套件",
+      "music": 0.0
+    },
+    {
+      "from": 220.18,
+      "to": 222.8,
+      "sid": 110,
+      "location": 2,
+      "content": "做好后分享成一个压缩包",
+      "music": 0.0
+    },
+    {
+      "from": 223.98,
+      "to": 225.2,
+      "sid": 111,
+      "location": 2,
+      "content": "最后总结一下",
+      "music": 0.0
+    },
+    {
+      "from": 225.2,
+      "to": 226.86,
+      "sid": 112,
+      "location": 2,
+      "content": "skill是给你的工作说明书",
+      "music": 0.0
+    },
+    {
+      "from": 226.86,
+      "to": 229.17,
+      "sid": 113,
+      "location": 2,
+      "content": "专家套件是整个团队的工具箱",
+      "music": 0.0
+    },
+    {
+      "from": 229.17,
+      "to": 231.05,
+      "sid": 114,
+      "location": 2,
+      "content": "先把自己的流程沉淀成技能",
+      "music": 0.0
+    },
+    {
+      "from": 231.05,
+      "to": 233.09,
+      "sid": 115,
+      "location": 2,
+      "content": "想要规模化再打包成套件",
+      "music": 0.0
+    },
+    {
+      "from": 233.09,
+      "to": 235.23,
+      "sid": 116,
+      "location": 2,
+      "content": "如果这期教程对你有一点帮助",
+      "music": 0.0
+    },
+    {
+      "from": 235.23,
+      "to": 236.73,
+      "sid": 117,
+      "location": 2,
+      "content": "求帮做一个一键三连",
+      "music": 0.0
+    },
+    {
+      "from": 236.73,
+      "to": 238.18,
+      "sid": 118,
+      "location": 2,
+      "content": "我们下期再见",
+      "music": 0.0
+    }
+  ]
+}

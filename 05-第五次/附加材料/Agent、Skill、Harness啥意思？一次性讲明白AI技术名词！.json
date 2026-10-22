@@ -1,0 +1,1644 @@
+{
+  "font_size": 0.4,
+  "font_color": "#FFFFFF",
+  "background_alpha": 0.5,
+  "background_color": "#9C27B0",
+  "Stroke": "none",
+  "type": "AIsubtitle",
+  "lang": "zh",
+  "version": "v1.7.0.4",
+  "body": [
+    {
+      "from": 0.04,
+      "to": 2.52,
+      "sid": 1,
+      "location": 2,
+      "content": "这两年AI圈的热词层出不穷",
+      "music": 0.0
+    },
+    {
+      "from": 2.52,
+      "to": 4.32,
+      "sid": 2,
+      "location": 2,
+      "content": "L l m token prompt",
+      "music": 0.0
+    },
+    {
+      "from": 4.32,
+      "to": 6.44,
+      "sid": 3,
+      "location": 2,
+      "content": "R a g m c p agents skill",
+      "music": 0.0
+    },
+    {
+      "from": 6.44,
+      "to": 8.16,
+      "sid": 4,
+      "location": 2,
+      "content": "光是念一遍就让人头大",
+      "music": 0.0
+    },
+    {
+      "from": 8.16,
+      "to": 9.76,
+      "sid": 5,
+      "location": 2,
+      "content": "这些词是怎么出现的",
+      "music": 0.0
+    },
+    {
+      "from": 9.76,
+      "to": 11.12,
+      "sid": 6,
+      "location": 2,
+      "content": "各自解决什么问题",
+      "music": 0.0
+    },
+    {
+      "from": 11.12,
+      "to": 12.82,
+      "sid": 7,
+      "location": 2,
+      "content": "今天用一个视频讲明白",
+      "music": 0.0
+    },
+    {
+      "from": 12.82,
+      "to": 14.84,
+      "sid": 8,
+      "location": 2,
+      "content": "假设你这周末想到杭州玩",
+      "music": 0.0
+    },
+    {
+      "from": 14.84,
+      "to": 16.12,
+      "sid": 9,
+      "location": 2,
+      "content": "你打开对话窗口",
+      "music": 0.0
+    },
+    {
+      "from": 16.12,
+      "to": 17.3,
+      "sid": 10,
+      "location": 2,
+      "content": "随口问一句",
+      "music": 0.0
+    },
+    {
+      "from": 17.3,
+      "to": 18.76,
+      "sid": 11,
+      "location": 2,
+      "content": "他很快给了一段答复",
+      "music": 0.0
+    },
+    {
+      "from": 18.76,
+      "to": 21.06,
+      "sid": 12,
+      "location": 2,
+      "content": "这背后的核心就是大语言模型",
+      "music": 0.0
+    },
+    {
+      "from": 21.06,
+      "to": 24.5,
+      "sid": 13,
+      "location": 2,
+      "content": "LLM他将你的话拆解为不是一个字",
+      "music": 0.0
+    },
+    {
+      "from": 24.5,
+      "to": 26.08,
+      "sid": 14,
+      "location": 2,
+      "content": "也不完全等于一个词",
+      "music": 0.0
+    },
+    {
+      "from": 26.08,
+      "to": 28.6,
+      "sid": 15,
+      "location": 2,
+      "content": "只是大模型理解文字的最小单元",
+      "music": 0.0
+    },
+    {
+      "from": 28.6,
+      "to": 31.34,
+      "sid": 16,
+      "location": 2,
+      "content": "每个token对应着一个数字叫token id",
+      "music": 0.0
+    },
+    {
+      "from": 31.34,
+      "to": 32.64,
+      "sid": 17,
+      "location": 2,
+      "content": "大模型通过计算",
+      "music": 0.0
+    },
+    {
+      "from": 32.64,
+      "to": 35.32,
+      "sid": 18,
+      "location": 2,
+      "content": "预测出一个token后面最该接哪一个",
+      "music": 0.0
+    },
+    {
+      "from": 35.32,
+      "to": 36.96,
+      "sid": 19,
+      "location": 2,
+      "content": "从而拼凑出完整回答",
+      "music": 0.0
+    },
+    {
+      "from": 36.96,
+      "to": 38.04,
+      "sid": 20,
+      "location": 2,
+      "content": "在这个过程中",
+      "music": 0.0
+    },
+    {
+      "from": 38.04,
+      "to": 40.499,
+      "sid": 21,
+      "location": 2,
+      "content": "你的提问就是prompt提示词",
+      "music": 0.0
+    },
+    {
+      "from": 40.499,
+      "to": 41.999,
+      "sid": 22,
+      "location": 2,
+      "content": "不过你随口一问",
+      "music": 0.0
+    },
+    {
+      "from": 41.999,
+      "to": 43.319,
+      "sid": 23,
+      "location": 2,
+      "content": "AI回答很浅显",
+      "music": 0.0
+    },
+    {
+      "from": 43.319,
+      "to": 44.24,
+      "sid": 24,
+      "location": 2,
+      "content": "换一种问法",
+      "music": 0.0
+    },
+    {
+      "from": 44.24,
+      "to": 45.18,
+      "sid": 25,
+      "location": 2,
+      "content": "预算2000",
+      "music": 0.0
+    },
+    {
+      "from": 45.18,
+      "to": 46.72,
+      "sid": 26,
+      "location": 2,
+      "content": "帮我按天规划行程",
+      "music": 0.0
+    },
+    {
+      "from": 46.72,
+      "to": 48.16,
+      "sid": 27,
+      "location": 2,
+      "content": "回答立刻好用很多",
+      "music": 0.0
+    },
+    {
+      "from": 48.16,
+      "to": 52.34,
+      "sid": 28,
+      "location": 2,
+      "content": "这套把话说清楚的方法论就叫pro engineering提示词",
+      "music": 0.0
+    },
+    {
+      "from": 52.34,
+      "to": 54.98,
+      "sid": 29,
+      "location": 2,
+      "content": "工厂规划旅行不可能一句话说完",
+      "music": 0.0
+    },
+    {
+      "from": 54.98,
+      "to": 57.1,
+      "sid": 30,
+      "location": 2,
+      "content": "以限定预算2000又补充",
+      "music": 0.0
+    },
+    {
+      "from": 57.1,
+      "to": 58.32,
+      "sid": 31,
+      "location": 2,
+      "content": "不想去网红景点",
+      "music": 0.0
+    },
+    {
+      "from": 58.32,
+      "to": 60.02,
+      "sid": 32,
+      "location": 2,
+      "content": "AI都能调整推荐方向",
+      "music": 0.0
+    },
+    {
+      "from": 60.02,
+      "to": 61.2,
+      "sid": 33,
+      "location": 2,
+      "content": "他是怎么记住的",
+      "music": 0.0
+    },
+    {
+      "from": 61.2,
+      "to": 62.6,
+      "sid": 34,
+      "location": 2,
+      "content": "因为每次发消息时",
+      "music": 0.0
+    },
+    {
+      "from": 62.6,
+      "to": 65.64,
+      "sid": 35,
+      "location": 2,
+      "content": "系统会把之前的对话一起打包发给大模型",
+      "music": 0.0
+    },
+    {
+      "from": 65.64,
+      "to": 66.68,
+      "sid": 36,
+      "location": 2,
+      "content": "这就是context",
+      "music": 0.0
+    },
+    {
+      "from": 66.68,
+      "to": 68.48,
+      "sid": 37,
+      "location": 2,
+      "content": "也就是我们常说的上下文",
+      "music": 0.0
+    },
+    {
+      "from": 68.48,
+      "to": 71.28,
+      "sid": 38,
+      "location": 2,
+      "content": "但大模型理解上下文的长度是有限的",
+      "music": 0.0
+    },
+    {
+      "from": 71.28,
+      "to": 72.64,
+      "sid": 39,
+      "location": 2,
+      "content": "随着对话不断积累",
+      "music": 0.0
+    },
+    {
+      "from": 72.64,
+      "to": 74.36,
+      "sid": 40,
+      "location": 2,
+      "content": "模型会忘记最开始的内容",
+      "music": 0.0
+    },
+    {
+      "from": 74.36,
+      "to": 75.68,
+      "sid": 41,
+      "location": 2,
+      "content": "一个常见的做法是",
+      "music": 0.0
+    },
+    {
+      "from": 75.68,
+      "to": 78.38,
+      "sid": 42,
+      "location": 2,
+      "content": "让模型把之前的对话做一次压缩总结",
+      "music": 0.0
+    },
+    {
+      "from": 78.38,
+      "to": 79.72,
+      "sid": 43,
+      "location": 2,
+      "content": "只保留关键信息",
+      "music": 0.0
+    },
+    {
+      "from": 79.72,
+      "to": 83.58,
+      "sid": 44,
+      "location": 2,
+      "content": "这个被压缩过的关键信息就是memory模型的记忆",
+      "music": 0.0
+    },
+    {
+      "from": 83.58,
+      "to": 84.38,
+      "sid": 45,
+      "location": 2,
+      "content": "到这里",
+      "music": 0.0
+    },
+    {
+      "from": 84.38,
+      "to": 87.72,
+      "sid": 46,
+      "location": 2,
+      "content": "模型已经越来越接近我们想象中智能的样子了",
+      "music": 0.0
+    },
+    {
+      "from": 87.72,
+      "to": 88.64,
+      "sid": 47,
+      "location": 2,
+      "content": "对话继续",
+      "music": 0.0
+    },
+    {
+      "from": 88.64,
+      "to": 89.65,
+      "sid": 48,
+      "location": 2,
+      "content": "你接着问",
+      "music": 0.0
+    },
+    {
+      "from": 89.65,
+      "to": 91.71,
+      "sid": 49,
+      "location": 2,
+      "content": "看看我之前收藏的旅行攻略",
+      "music": 0.0
+    },
+    {
+      "from": 91.71,
+      "to": 93.14,
+      "sid": 50,
+      "location": 2,
+      "content": "规划行程啊",
+      "music": 0.0
+    },
+    {
+      "from": 93.14,
+      "to": 94.42,
+      "sid": 51,
+      "location": 2,
+      "content": "哦模型宕机了",
+      "music": 0.0
+    },
+    {
+      "from": 94.42,
+      "to": 96.36,
+      "sid": 52,
+      "location": 2,
+      "content": "他不知道你收藏的攻略是什么",
+      "music": 0.0
+    },
+    {
+      "from": 96.36,
+      "to": 99.38,
+      "sid": 53,
+      "location": 2,
+      "content": "这时候就需要RAG检索增强生成",
+      "music": 0.0
+    },
+    {
+      "from": 99.38,
+      "to": 100.98,
+      "sid": 54,
+      "location": 2,
+      "content": "它能读取你的私有资料",
+      "music": 0.0
+    },
+    {
+      "from": 100.98,
+      "to": 102.76,
+      "sid": 55,
+      "location": 2,
+      "content": "让回答更加真实可靠",
+      "music": 0.0
+    },
+    {
+      "from": 102.76,
+      "to": 104.64,
+      "sid": 56,
+      "location": 2,
+      "content": "他先把你的资料切成小片段",
+      "music": 0.0
+    },
+    {
+      "from": 104.64,
+      "to": 105.4,
+      "sid": 57,
+      "location": 2,
+      "content": "存进知识库",
+      "music": 0.0
+    },
+    {
+      "from": 105.4,
+      "to": 106.46,
+      "sid": 58,
+      "location": 2,
+      "content": "当你提问时",
+      "music": 0.0
+    },
+    {
+      "from": 106.46,
+      "to": 108.52,
+      "sid": 59,
+      "location": 2,
+      "content": "系统检索出最相关的片段",
+      "music": 0.0
+    },
+    {
+      "from": 108.52,
+      "to": 111.42,
+      "sid": 60,
+      "location": 2,
+      "content": "并作为背景资料和你的问题拼接模型",
+      "music": 0.0
+    },
+    {
+      "from": 111.42,
+      "to": 113.14,
+      "sid": 61,
+      "location": 2,
+      "content": "阅读这段增强后的上下文",
+      "music": 0.0
+    },
+    {
+      "from": 113.14,
+      "to": 114.58,
+      "sid": 62,
+      "location": 2,
+      "content": "给你生成准确的回复",
+      "music": 0.0
+    },
+    {
+      "from": 114.58,
+      "to": 117.62,
+      "sid": 63,
+      "location": 2,
+      "content": "我们现在接触到的AI客服AI问答助手",
+      "music": 0.0
+    },
+    {
+      "from": 117.62,
+      "to": 119.74,
+      "sid": 64,
+      "location": 2,
+      "content": "其实背后都是在用RAG技术",
+      "music": 0.0
+    },
+    {
+      "from": 119.74,
+      "to": 122.6,
+      "sid": 65,
+      "location": 2,
+      "content": "归根结底它也只是让模型答得更好",
+      "music": 0.0
+    },
+    {
+      "from": 122.6,
+      "to": 124.36,
+      "sid": 66,
+      "location": 2,
+      "content": "但大模型还不能真正干活",
+      "music": 0.0
+    },
+    {
+      "from": 124.36,
+      "to": 126.5,
+      "sid": 67,
+      "location": 2,
+      "content": "你说帮我查询一下高铁票",
+      "music": 0.0
+    },
+    {
+      "from": 126.5,
+      "to": 127.28,
+      "sid": 68,
+      "location": 2,
+      "content": "AI回复",
+      "music": 0.0
+    },
+    {
+      "from": 127.28,
+      "to": 128.74,
+      "sid": 69,
+      "location": 2,
+      "content": "你可以打开12306",
+      "music": 0.0
+    },
+    {
+      "from": 128.74,
+      "to": 130.3,
+      "sid": 70,
+      "location": 2,
+      "content": "他只会告诉你怎么做",
+      "music": 0.0
+    },
+    {
+      "from": 130.3,
+      "to": 132.62,
+      "sid": 71,
+      "location": 2,
+      "content": "但没法真的查询到高铁车次",
+      "music": 0.0
+    },
+    {
+      "from": 132.62,
+      "to": 134.42,
+      "sid": 72,
+      "location": 2,
+      "content": "荒神calling机智登场了",
+      "music": 0.0
+    },
+    {
+      "from": 134.42,
+      "to": 137.3,
+      "sid": 73,
+      "location": 2,
+      "content": "它让大模型具备能够接入外部工具的能力",
+      "music": 0.0
+    },
+    {
+      "from": 137.3,
+      "to": 138.64,
+      "sid": 74,
+      "location": 2,
+      "content": "整个机制是这样的",
+      "music": 0.0
+    },
+    {
+      "from": 138.64,
+      "to": 141.62,
+      "sid": 75,
+      "location": 2,
+      "content": "程序先告诉模型有什么第三方工具可以用",
+      "music": 0.0
+    },
+    {
+      "from": 141.62,
+      "to": 143.14,
+      "sid": 76,
+      "location": 2,
+      "content": "再把你的对话发过去",
+      "music": 0.0
+    },
+    {
+      "from": 143.14,
+      "to": 145.54,
+      "sid": 77,
+      "location": 2,
+      "content": "当模型判断需要调用工具时",
+      "music": 0.0
+    },
+    {
+      "from": 145.54,
+      "to": 147.58,
+      "sid": 78,
+      "location": 2,
+      "content": "需要输出一段结构化的函数",
+      "music": 0.0
+    },
+    {
+      "from": 147.58,
+      "to": 150.61,
+      "sid": 79,
+      "location": 2,
+      "content": "调用指令程序拿到指令去查询车次",
+      "music": 0.0
+    },
+    {
+      "from": 150.61,
+      "to": 152.51,
+      "sid": 80,
+      "location": 2,
+      "content": "再把结果返还给模型",
+      "music": 0.0
+    },
+    {
+      "from": 152.51,
+      "to": 156.22,
+      "sid": 81,
+      "location": 2,
+      "content": "这时候模型就可以回复符合行程规划的车票有",
+      "music": 0.0
+    },
+    {
+      "from": 156.22,
+      "to": 157.72,
+      "sid": 82,
+      "location": 2,
+      "content": "但这里有个工程问题",
+      "music": 0.0
+    },
+    {
+      "from": 157.72,
+      "to": 159.22,
+      "sid": 83,
+      "location": 2,
+      "content": "每接入一个新工具",
+      "music": 0.0
+    },
+    {
+      "from": 159.22,
+      "to": 161.06,
+      "sid": 84,
+      "location": 2,
+      "content": "就需要单独写适配代码",
+      "music": 0.0
+    },
+    {
+      "from": 161.06,
+      "to": 163.8,
+      "sid": 85,
+      "location": 2,
+      "content": "不同应用之间这些工作完全无法复用",
+      "music": 0.0
+    },
+    {
+      "from": 163.8,
+      "to": 165.34,
+      "sid": 86,
+      "location": 2,
+      "content": "于是有了MCP",
+      "music": 0.0
+    },
+    {
+      "from": 165.34,
+      "to": 168.56,
+      "sid": 87,
+      "location": 2,
+      "content": "它让所有第三方工具的接口统一了AI程序",
+      "music": 0.0
+    },
+    {
+      "from": 168.56,
+      "to": 170.9,
+      "sid": 88,
+      "location": 2,
+      "content": "只需要对接MCP这一个协议",
+      "music": 0.0
+    },
+    {
+      "from": 170.9,
+      "to": 173.62,
+      "sid": 89,
+      "location": 2,
+      "content": "就能调用所有使用同一接口的工具",
+      "music": 0.0
+    },
+    {
+      "from": 173.62,
+      "to": 176.58,
+      "sid": 90,
+      "location": 2,
+      "content": "很多人会把function calling和MCP混淆",
+      "music": 0.0
+    },
+    {
+      "from": 176.58,
+      "to": 178.1,
+      "sid": 91,
+      "location": 2,
+      "content": "觉得不是同一个东西吗",
+      "music": 0.0
+    },
+    {
+      "from": 178.1,
+      "to": 179.3,
+      "sid": 92,
+      "location": 2,
+      "content": "其实差别可大了",
+      "music": 0.0
+    },
+    {
+      "from": 179.3,
+      "to": 182.98,
+      "sid": 93,
+      "location": 2,
+      "content": "FUNGUARLING是让模型按照约定格式输出调用指令",
+      "music": 0.0
+    },
+    {
+      "from": 182.98,
+      "to": 186.7,
+      "sid": 94,
+      "location": 2,
+      "content": "而MCP是让所有工具都遵循同一种格式",
+      "music": 0.0
+    },
+    {
+      "from": 186.7,
+      "to": 187.84,
+      "sid": 95,
+      "location": 2,
+      "content": "被模型接入",
+      "music": 0.0
+    },
+    {
+      "from": 187.84,
+      "to": 189.6,
+      "sid": 96,
+      "location": 2,
+      "content": "AI能接入不同工具了",
+      "music": 0.0
+    },
+    {
+      "from": 189.6,
+      "to": 190.28,
+      "sid": 97,
+      "location": 2,
+      "content": "很不错",
+      "music": 0.0
+    },
+    {
+      "from": 190.28,
+      "to": 192.04,
+      "sid": 98,
+      "location": 2,
+      "content": "但你还得一步步指挥他",
+      "music": 0.0
+    },
+    {
+      "from": 192.04,
+      "to": 193.48,
+      "sid": 99,
+      "location": 2,
+      "content": "能不能你就说一句",
+      "music": 0.0
+    },
+    {
+      "from": 193.48,
+      "to": 195.32,
+      "sid": 100,
+      "location": 2,
+      "content": "帮我把杭州旅行安排好",
+      "music": 0.0
+    },
+    {
+      "from": 195.32,
+      "to": 197.06,
+      "sid": 101,
+      "location": 2,
+      "content": "剩下全交给他可以",
+      "music": 0.0
+    },
+    {
+      "from": 197.06,
+      "to": 198.0,
+      "sid": 102,
+      "location": 2,
+      "content": "这就是agent",
+      "music": 0.0
+    },
+    {
+      "from": 198.0,
+      "to": 201.24,
+      "sid": 103,
+      "location": 2,
+      "content": "一个agent接到目标后会自己思考该怎么做",
+      "music": 0.0
+    },
+    {
+      "from": 201.24,
+      "to": 203.12,
+      "sid": 104,
+      "location": 2,
+      "content": "整个过程他自己规划步骤",
+      "music": 0.0
+    },
+    {
+      "from": 203.12,
+      "to": 204.48,
+      "sid": 105,
+      "location": 2,
+      "content": "自己调用外部工具",
+      "music": 0.0
+    },
+    {
+      "from": 204.48,
+      "to": 206.34,
+      "sid": 106,
+      "location": 2,
+      "content": "自己记录每一步的结果",
+      "music": 0.0
+    },
+    {
+      "from": 206.34,
+      "to": 206.82,
+      "sid": 107,
+      "location": 2,
+      "content": "诶",
+      "music": 0.0
+    },
+    {
+      "from": 206.82,
+      "to": 209.16,
+      "sid": 108,
+      "location": 2,
+      "content": "这不都是我们刚刚讲过的能力吗",
+      "music": 0.0
+    },
+    {
+      "from": 209.16,
+      "to": 212.159,
+      "sid": 109,
+      "location": 2,
+      "content": "对agent就是在大模型的基础上",
+      "music": 0.0
+    },
+    {
+      "from": 212.159,
+      "to": 215.059,
+      "sid": 110,
+      "location": 2,
+      "content": "把这些能力打包成一个能独立干活的系统",
+      "music": 0.0
+    },
+    {
+      "from": 215.059,
+      "to": 216.179,
+      "sid": 111,
+      "location": 2,
+      "content": "大模型再聪明",
+      "music": 0.0
+    },
+    {
+      "from": 216.179,
+      "to": 217.7,
+      "sid": 112,
+      "location": 2,
+      "content": "也只会在文本框里",
+      "music": 0.0
+    },
+    {
+      "from": 217.7,
+      "to": 218.54,
+      "sid": 113,
+      "location": 2,
+      "content": "你问一句",
+      "music": 0.0
+    },
+    {
+      "from": 218.54,
+      "to": 219.3,
+      "sid": 114,
+      "location": 2,
+      "content": "他答一句",
+      "music": 0.0
+    },
+    {
+      "from": 219.3,
+      "to": 221.56,
+      "sid": 115,
+      "location": 2,
+      "content": "而agent能实实在在帮你干活",
+      "music": 0.0
+    },
+    {
+      "from": 221.56,
+      "to": 223.1,
+      "sid": 116,
+      "location": 2,
+      "content": "而且持续学习思考",
+      "music": 0.0
+    },
+    {
+      "from": 223.1,
+      "to": 224.12,
+      "sid": 117,
+      "location": 2,
+      "content": "越干越聪明",
+      "music": 0.0
+    },
+    {
+      "from": 224.12,
+      "to": 226.72,
+      "sid": 118,
+      "location": 2,
+      "content": "市面上的AI产品本质上都是agent",
+      "music": 0.0
+    },
+    {
+      "from": 226.72,
+      "to": 228.18,
+      "sid": 119,
+      "location": 2,
+      "content": "都有思考规划的能力",
+      "music": 0.0
+    },
+    {
+      "from": 228.18,
+      "to": 229.28,
+      "sid": 120,
+      "location": 2,
+      "content": "只是形态不同",
+      "music": 0.0
+    },
+    {
+      "from": 229.28,
+      "to": 231.2,
+      "sid": 121,
+      "location": 2,
+      "content": "能自主执行的程度不同",
+      "music": 0.0
+    },
+    {
+      "from": 231.2,
+      "to": 232.86,
+      "sid": 122,
+      "location": 2,
+      "content": "比如最常见的对话窗口",
+      "music": 0.0
+    },
+    {
+      "from": 232.86,
+      "to": 233.64,
+      "sid": 123,
+      "location": 2,
+      "content": "Queen studio",
+      "music": 0.0
+    },
+    {
+      "from": 233.64,
+      "to": 235.32,
+      "sid": 124,
+      "location": 2,
+      "content": "编程领域的CLI工具",
+      "music": 0.0
+    },
+    {
+      "from": 235.32,
+      "to": 237.84,
+      "sid": 125,
+      "location": 2,
+      "content": "坤客通用领域的龙虾类桌面助手",
+      "music": 0.0
+    },
+    {
+      "from": 237.84,
+      "to": 238.55,
+      "sid": 126,
+      "location": 2,
+      "content": "Qubo",
+      "music": 0.0
+    },
+    {
+      "from": 238.55,
+      "to": 241.51,
+      "sid": 127,
+      "location": 2,
+      "content": "坤豹这种龙虾类的桌面助手为什么会爆火",
+      "music": 0.0
+    },
+    {
+      "from": 241.51,
+      "to": 243.75,
+      "sid": 128,
+      "location": 2,
+      "content": "因为他自主执行的能力上了一个台阶",
+      "music": 0.0
+    },
+    {
+      "from": 243.75,
+      "to": 245.59,
+      "sid": 129,
+      "location": 2,
+      "content": "不仅能操作你的本地电脑",
+      "music": 0.0
+    },
+    {
+      "from": 245.59,
+      "to": 247.28,
+      "sid": 130,
+      "location": 2,
+      "content": "定时执行任务",
+      "music": 0.0
+    },
+    {
+      "from": 247.28,
+      "to": 249.42,
+      "sid": 131,
+      "location": 2,
+      "content": "还能通过社交软件和你沟通",
+      "music": 0.0
+    },
+    {
+      "from": 249.42,
+      "to": 251.46,
+      "sid": 132,
+      "location": 2,
+      "content": "像一个真正帮你干活的助手",
+      "music": 0.0
+    },
+    {
+      "from": 251.46,
+      "to": 252.58,
+      "sid": 133,
+      "location": 2,
+      "content": "理想情况下",
+      "music": 0.0
+    },
+    {
+      "from": 252.58,
+      "to": 255.11,
+      "sid": 134,
+      "location": 2,
+      "content": "agent能完全自己安排旅行",
+      "music": 0.0
+    },
+    {
+      "from": 255.11,
+      "to": 257.75,
+      "sid": 135,
+      "location": 2,
+      "content": "但实际上你还是得提醒他应该怎么干",
+      "music": 0.0
+    },
+    {
+      "from": 257.75,
+      "to": 259.41,
+      "sid": 136,
+      "location": 2,
+      "content": "提醒他按天规划行程",
+      "music": 0.0
+    },
+    {
+      "from": 259.41,
+      "to": 260.51,
+      "sid": 137,
+      "location": 2,
+      "content": "找本地攻略",
+      "music": 0.0
+    },
+    {
+      "from": 260.51,
+      "to": 261.67,
+      "sid": 138,
+      "location": 2,
+      "content": "查高铁信息",
+      "music": 0.0
+    },
+    {
+      "from": 261.67,
+      "to": 264.2,
+      "sid": 139,
+      "location": 2,
+      "content": "那么skill技能来帮你了",
+      "music": 0.0
+    },
+    {
+      "from": 264.2,
+      "to": 267.1,
+      "sid": 140,
+      "location": 2,
+      "content": "你可以把所有的偏好和规则写进一个skill",
+      "music": 0.0
+    },
+    {
+      "from": 267.1,
+      "to": 269.66,
+      "sid": 141,
+      "location": 2,
+      "content": "下次agent接到类似任务时",
+      "music": 0.0
+    },
+    {
+      "from": 269.66,
+      "to": 271.24,
+      "sid": 142,
+      "location": 2,
+      "content": "会参考这份文件",
+      "music": 0.0
+    },
+    {
+      "from": 271.24,
+      "to": 272.46,
+      "sid": 143,
+      "location": 2,
+      "content": "按规定办事",
+      "music": 0.0
+    },
+    {
+      "from": 272.46,
+      "to": 273.24,
+      "sid": 144,
+      "location": 2,
+      "content": "有人说",
+      "music": 0.0
+    },
+    {
+      "from": 273.24,
+      "to": 274.61,
+      "sid": 145,
+      "location": 2,
+      "content": "这不就是prompt",
+      "music": 0.0
+    },
+    {
+      "from": 274.61,
+      "to": 277.05,
+      "sid": 146,
+      "location": 2,
+      "content": "是也不全是prompt",
+      "music": 0.0
+    },
+    {
+      "from": 277.05,
+      "to": 278.41,
+      "sid": 147,
+      "location": 2,
+      "content": "是一次性的话术",
+      "music": 0.0
+    },
+    {
+      "from": 278.41,
+      "to": 279.63,
+      "sid": 148,
+      "location": 2,
+      "content": "像便签纸",
+      "music": 0.0
+    },
+    {
+      "from": 279.63,
+      "to": 281.01,
+      "sid": 149,
+      "location": 2,
+      "content": "每次用都得写",
+      "music": 0.0
+    },
+    {
+      "from": 281.01,
+      "to": 283.49,
+      "sid": 150,
+      "location": 2,
+      "content": "而scale是可以重复使用的",
+      "music": 0.0
+    },
+    {
+      "from": 283.49,
+      "to": 284.47,
+      "sid": 151,
+      "location": 2,
+      "content": "程序化能力",
+      "music": 0.0
+    },
+    {
+      "from": 284.47,
+      "to": 285.48,
+      "sid": 152,
+      "location": 2,
+      "content": "像一本书",
+      "music": 0.0
+    },
+    {
+      "from": 285.48,
+      "to": 286.36,
+      "sid": 153,
+      "location": 2,
+      "content": "有标题",
+      "music": 0.0
+    },
+    {
+      "from": 286.36,
+      "to": 287.14,
+      "sid": 154,
+      "location": 2,
+      "content": "有内容",
+      "music": 0.0
+    },
+    {
+      "from": 287.14,
+      "to": 288.46,
+      "sid": 155,
+      "location": 2,
+      "content": "随时可以翻翻看",
+      "music": 0.0
+    },
+    {
+      "from": 288.46,
+      "to": 290.28,
+      "sid": 156,
+      "location": 2,
+      "content": "它本身就是结构化的",
+      "music": 0.0
+    },
+    {
+      "from": 290.28,
+      "to": 292.8,
+      "sid": 157,
+      "location": 2,
+      "content": "可以将你所有的skill都整合在一起",
+      "music": 0.0
+    },
+    {
+      "from": 292.8,
+      "to": 294.7,
+      "sid": 158,
+      "location": 2,
+      "content": "通过渐进式的纰漏机制",
+      "music": 0.0
+    },
+    {
+      "from": 294.7,
+      "to": 297.52,
+      "sid": 159,
+      "location": 2,
+      "content": "会在运行过程中按需激活读取",
+      "music": 0.0
+    },
+    {
+      "from": 297.52,
+      "to": 298.7,
+      "sid": 160,
+      "location": 2,
+      "content": "使用不同skill",
+      "music": 0.0
+    },
+    {
+      "from": 298.7,
+      "to": 300.52,
+      "sid": 161,
+      "location": 2,
+      "content": "大大节省上下文和token",
+      "music": 0.0
+    },
+    {
+      "from": 300.52,
+      "to": 302.539,
+      "sid": 162,
+      "location": 2,
+      "content": "让任务执行的成本更低",
+      "music": 0.0
+    },
+    {
+      "from": 302.539,
+      "to": 303.239,
+      "sid": 163,
+      "location": 2,
+      "content": "到这里",
+      "music": 0.0
+    },
+    {
+      "from": 303.239,
+      "to": 305.599,
+      "sid": 164,
+      "location": 2,
+      "content": "agent基本上已经接管了你的电脑",
+      "music": 0.0
+    },
+    {
+      "from": 305.599,
+      "to": 306.68,
+      "sid": 165,
+      "location": 2,
+      "content": "但能力越大",
+      "music": 0.0
+    },
+    {
+      "from": 306.68,
+      "to": 308.0,
+      "sid": 166,
+      "location": 2,
+      "content": "闯祸能力也越大",
+      "music": 0.0
+    },
+    {
+      "from": 308.0,
+      "to": 309.48,
+      "sid": 167,
+      "location": 2,
+      "content": "A真的有时候会失控",
+      "music": 0.0
+    },
+    {
+      "from": 309.48,
+      "to": 310.84,
+      "sid": 168,
+      "location": 2,
+      "content": "比如你让他买车票",
+      "music": 0.0
+    },
+    {
+      "from": 310.84,
+      "to": 311.78,
+      "sid": 169,
+      "location": 2,
+      "content": "他买错了",
+      "music": 0.0
+    },
+    {
+      "from": 311.78,
+      "to": 313.32,
+      "sid": 170,
+      "location": 2,
+      "content": "甚至直接付钱",
+      "music": 0.0
+    },
+    {
+      "from": 313.32,
+      "to": 314.84,
+      "sid": 171,
+      "location": 2,
+      "content": "那么harness出现了",
+      "music": 0.0
+    },
+    {
+      "from": 314.84,
+      "to": 316.98,
+      "sid": 172,
+      "location": 2,
+      "content": "就像字面意思马剧一样",
+      "music": 0.0
+    },
+    {
+      "from": 316.98,
+      "to": 318.36,
+      "sid": 173,
+      "location": 2,
+      "content": "套上脱缰的agent",
+      "music": 0.0
+    },
+    {
+      "from": 318.36,
+      "to": 319.82,
+      "sid": 174,
+      "location": 2,
+      "content": "约束他的失控行为",
+      "music": 0.0
+    },
+    {
+      "from": 319.82,
+      "to": 322.88,
+      "sid": 175,
+      "location": 2,
+      "content": "HARNE首先将最全面的上下文提供给模型",
+      "music": 0.0
+    },
+    {
+      "from": 322.88,
+      "to": 323.92,
+      "sid": 176,
+      "location": 2,
+      "content": "避免其失忆",
+      "music": 0.0
+    },
+    {
+      "from": 323.92,
+      "to": 325.74,
+      "sid": 177,
+      "location": 2,
+      "content": "同时给agent划定边界",
+      "music": 0.0
+    },
+    {
+      "from": 325.74,
+      "to": 328.14,
+      "sid": 178,
+      "location": 2,
+      "content": "明确哪些红线坚决不能碰",
+      "music": 0.0
+    },
+    {
+      "from": 328.14,
+      "to": 330.18,
+      "sid": 179,
+      "location": 2,
+      "content": "最后能自动验收任务成果",
+      "music": 0.0
+    },
+    {
+      "from": 330.18,
+      "to": 331.48,
+      "sid": 180,
+      "location": 2,
+      "content": "第一时间给出反馈",
+      "music": 0.0
+    },
+    {
+      "from": 331.48,
+      "to": 332.7,
+      "sid": 181,
+      "location": 2,
+      "content": "并且引导修复",
+      "music": 0.0
+    },
+    {
+      "from": 332.7,
+      "to": 336.14,
+      "sid": 182,
+      "location": 2,
+      "content": "它的核心就是构造一个AI友好工作环境",
+      "music": 0.0
+    },
+    {
+      "from": 336.14,
+      "to": 338.76,
+      "sid": 183,
+      "location": 2,
+      "content": "确保在可控的范围内爆发生产力",
+      "music": 0.0
+    },
+    {
+      "from": 338.76,
+      "to": 340.74,
+      "sid": 184,
+      "location": 2,
+      "content": "毕竟谁也不想一觉醒来",
+      "music": 0.0
+    },
+    {
+      "from": 340.74,
+      "to": 342.92,
+      "sid": 185,
+      "location": 2,
+      "content": "agent的把你的电脑格式化了",
+      "music": 0.0
+    },
+    {
+      "from": 342.92,
+      "to": 343.44,
+      "sid": 186,
+      "location": 2,
+      "content": "好了",
+      "music": 0.0
+    },
+    {
+      "from": 343.44,
+      "to": 344.26,
+      "sid": 187,
+      "location": 2,
+      "content": "回到最初",
+      "music": 0.0
+    },
+    {
+      "from": 344.26,
+      "to": 345.78,
+      "sid": 188,
+      "location": 2,
+      "content": "你只是和AI说了一句",
+      "music": 0.0
+    },
+    {
+      "from": 345.78,
+      "to": 346.68,
+      "sid": 189,
+      "location": 2,
+      "content": "想去杭州玩",
+      "music": 0.0
+    },
+    {
+      "from": 346.68,
+      "to": 348.58,
+      "sid": 190,
+      "location": 2,
+      "content": "但随着问题和需求的增多",
+      "music": 0.0
+    },
+    {
+      "from": 348.58,
+      "to": 350.9,
+      "sid": 191,
+      "location": 2,
+      "content": "AI1层一层的加上了各种能力",
+      "music": 0.0
+    },
+    {
+      "from": 350.9,
+      "to": 353.04,
+      "sid": 192,
+      "location": 2,
+      "content": "这些概念不是凭空冒出的黑化",
+      "music": 0.0
+    },
+    {
+      "from": 353.04,
+      "to": 355.7,
+      "sid": 193,
+      "location": 2,
+      "content": "每一个都是因为上一部遇到的具体问题",
+      "music": 0.0
+    },
+    {
+      "from": 355.7,
+      "to": 357.32,
+      "sid": 194,
+      "location": 2,
+      "content": "才出现的解决方案",
+      "music": 0.0
+    },
+    {
+      "from": 357.32,
+      "to": 361.08,
+      "sid": 195,
+      "location": 2,
+      "content": "今天讲的是AI怎么从聊聊天变成真的能干活",
+      "music": 0.0
+    },
+    {
+      "from": 361.08,
+      "to": 361.82,
+      "sid": 196,
+      "location": 2,
+      "content": "这条主线",
+      "music": 0.0
+    },
+    {
+      "from": 361.82,
+      "to": 364.87,
+      "sid": 197,
+      "location": 2,
+      "content": "如果你还想知道大模型内部怎么运作",
+      "music": 0.0
+    },
+    {
+      "from": 364.87,
+      "to": 367.039,
+      "sid": 198,
+      "location": 2,
+      "content": "迁移参数怎么训练",
+      "music": 0.0
+    },
+    {
+      "from": 367.039,
+      "to": 368.519,
+      "sid": 199,
+      "location": 2,
+      "content": "多模态又是什么",
+      "music": 0.0
+    },
+    {
+      "from": 368.519,
+      "to": 370.119,
+      "sid": 200,
+      "location": 2,
+      "content": "感兴趣的朋友请留言",
+      "music": 0.0
+    },
+    {
+      "from": 370.119,
+      "to": 371.499,
+      "sid": 201,
+      "location": 2,
+      "content": "后续一个个讲清楚",
+      "music": 0.0
+    },
+    {
+      "from": 371.499,
+      "to": 372.659,
+      "sid": 202,
+      "location": 2,
+      "content": "如果觉得有帮助",
+      "music": 0.0
+    },
+    {
+      "from": 372.659,
+      "to": 373.739,
+      "sid": 203,
+      "location": 2,
+      "content": "记得点个关注",
+      "music": 0.0
+    },
+    {
+      "from": 373.739,
+      "to": 374.84,
+      "sid": 204,
+      "location": 2,
+      "content": "咱们下期见",
+      "music": 0.0
+    }
+  ]
+}

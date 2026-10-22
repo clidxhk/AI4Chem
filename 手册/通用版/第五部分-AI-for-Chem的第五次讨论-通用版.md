@@ -68,6 +68,14 @@
 例如，模型可以生成一个光谱数据整理脚本；运行工具执行脚本后，才会产生输出文件或报错。
 把报错返回给模型，它就有依据修改脚本并再次运行。
 
+![Agent 中模型提出行动、环境返回反馈并继续执行或停止的循环](https://clidxhk.github.io/AI4Chem/手册/通用版/图片/第五部分/agent-loop.png)
+
+*图 5-1　Agent 的执行循环。来源：[Anthropic，Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)，原图。*
+
+图中的 Human 是使用者，LLM Call 是一次模型调用，Environment 是文件、程序和其他工具所处的环境。
+沿 Action（行动）与 Feedback（反馈）的箭头看：系统执行操作，把结果交回模型，再决定继续还是 Stop（停止）。
+用户交代一次任务后，这个循环可能往返多次，这也为后面理解调用次数和费用提供了基础。
+
 **工具把模型提出的动作连接到真实操作，Agent 把操作结果连接到下一步。**
 因此，交付时应同时看生成了什么，以及相关步骤是否实际执行。
 
@@ -121,6 +129,14 @@ token 是文本切分后的片段，其大小随文本与切分方式变化，�
 常见文档知识库先解析文件，把内容分成片段并建立索引。
 提问时检索相关片段，将它们作为背景资料交给模型。
 许多此类应用在使用时更新的是外部资料与索引，无需为每篇新文件重新训练语言模型。
+
+![RAG 在提问时检索相似文档、加入问题并交给模型生成回答的流程](https://clidxhk.github.io/AI4Chem/手册/通用版/图片/第五部分/rag-runtime.png)
+
+*图 5-2　RAG 在提问时怎样取得资料。来源：[AWS，How Amazon Bedrock knowledge bases work](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-how-it-works.html)，原图。*
+
+先沿图中底部从左向右看：用户提出问题，系统检索相关文档，把检索结果加入问题，再交给文本模型生成回答。
+图中的 Embedding Model 把文字转换为可比较相关性的数值表示，Vector DB 是保存这类表示、用于检索的数据库。
+这是通过语义相似性检索的一种实现；应检查取回的文档片段是否真的支持回答。
 
 RAG 的代表性论文发表于 2020 年，早于后来的聊天产品热潮。
 它所回应的一个重要问题，是怎样让模型利用外部知识，并改善知识更新与来源追踪。[RAG 原始论文](https://arxiv.org/abs/2005.11401)
@@ -216,10 +232,26 @@ RAG 提供“把资料带进回答”的方法，Agent 则可以组织检索、�
 ### 5.3.2 技能包怎样组织与加载
 
 按 [Agent Skills 规范](https://agentskills.io/specification)，一个技能包至少包含 `SKILL.md`，其中写明名称、用途与具体说明，还可以附脚本、参考资料和模板。
+
+![SKILL.md 文件上方是名称与用途，下方是 Markdown 步骤和资源引用](https://clidxhk.github.io/AI4Chem/手册/通用版/图片/第五部分/skill-anatomy.jpg)
+
+*图 5-3　一个真实的 Skill 文件怎样组织。来源：[Anthropic，Equipping agents for the real world with Agent Skills](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)，原图。*
+
+上方的 YAML Frontmatter 是文件开头的元信息，`name` 和 `description` 帮助应用识别名称与用途。
+下方的 Markdown 正文写具体做法，也可以指向其他文件；图中处理 PDF 表单时，就会进一步读取 `forms.md`。
+科研阅读 Skill 可以采用同样结构，把用途写在前面，把阅读步骤、来源要求和输出模板放在正文及配套文件中。
+
 支持该机制的应用可先识别用途，任务匹配时再读取步骤，执行到需要某项资源时继续加载。
 
 这种**按需加载**把用途说明、操作方法和详细资源分开，帮助应用组织有限的上下文。
 触发与使用方式要与具体应用匹配。
+
+![应用先加载技能简介，收到 PDF 任务后读取 SKILL.md，再按需读取 forms.md](https://clidxhk.github.io/AI4Chem/手册/通用版/图片/第五部分/skill-context-loading.jpg)
+
+*图 5-4　Skill 怎样逐步进入上下文。来源：[Anthropic，同上文](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills)，原图中的 Claude 示例。*
+
+从上往下看：先有各 Skill 的简短说明，用户提出 PDF 任务后，系统读取相应 `SKILL.md`，再按其中的引用读取 `forms.md`。
+图中的 Tool use 表示实际读取文件，Tool result 表示读到的内容进入上下文；这里不需要重新训练模型。
 
 从使用角度看，技能包需要讲清以下内容：
 
@@ -287,6 +319,16 @@ Skill 保存做法，定时任务负责何时启动，执行记录则帮助检�
 模型可以通过不同服务提供，一个应用也可以支持多个模型。
 云平台还可以托管来自其他厂商的模型，所以要从实际配置确认调用对象。
 
+![Cline 配置页中分别填写服务地址、被遮蔽的 API Key 和具体模型标识](https://clidxhk.github.io/AI4Chem/手册/通用版/图片/第五部分/cline-provider-settings.png)
+
+*图 5-5　客户端怎样连接模型服务。来源：[d.run 官方文档，在 VSCode 和 Cline 中使用](https://docs.d.run/models/user-guides/cline-in-vscode)，原图；旧版界面示例。*
+
+图中显示的是 Cline 的设置页；Base URL 指向 d.run 的服务，Model ID 则选择该服务提供的 `public/deepseek-r1`。
+API Key 是访问该服务的凭证，图中已用圆点遮蔽。
+API Provider 中的 OpenAI Compatible 表示采用兼容的接口格式；实际服务方要看地址，实际模型要看 Model ID。
+这几个字段分别对应应用、服务与模型之间的连接关系，填写时应使用自己所选服务当前提供的配置。
+图内模型名称与提示语反映截图时的版本，本章仅用它辨认配置项目。
+
 “模型像发动机、产品像汽车”是一个便于理解的类比。
 实际完成工作，还需要界面、工具、权限和执行安排相互配合。
 选型时应分别检查这些环节。
@@ -312,6 +354,14 @@ IDE 指集成开发环境；VS Code 是可扩展编辑器，安装扩展后可�
 
 它组织上下文、工具连接、任务状态、执行循环、权限与反馈，使模型能够在具体环境中工作。
 例如，文献处理到第五篇时程序报错，系统需要保留已处理记录、把错误返回，并避免重做或覆盖前面的结果。
+
+![语言模型在应用中连接检索、工具和记忆等外部能力](https://clidxhk.github.io/AI4Chem/手册/通用版/图片/第五部分/augmented-llm.png)
+
+*图 5-6　围绕模型连接外部能力。来源：[Anthropic，Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)，原图中的 augmented LLM。*
+
+绿色框是语言模型，下方的 Retrieval、Tools、Memory 分别表示检索、工具与记忆。
+这些连线在实际系统中需要由应用及其配套结构实现，Harness 还要组织任务状态、权限和执行检查。
+图中先看清“模型”和“外围能力”各在什么位置，就容易理解为什么只选一个模型，还不足以决定整套 Agent 怎样工作。
 
 Harness 既提供执行能力，也安排约束与检查。
 使用者能否看见改动、收窄目录、停止任务和回查结果，会影响实际使用体验。
